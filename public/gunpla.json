@@ -1,792 +1,1072 @@
 [
-    {
-        "name": "God Gundam",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "August 2022",
-        "p-bandai": false,
-        "price": 49.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-0 Unicorn Gundam",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "August 2017",
-        "p-bandai": false,
-        "price": 45.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MSN-04 Sazabi",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "August 2018",
-        "p-bandai": false,
-        "price": 57.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Hi-v (Hi-Nu) Gundam",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "May 2021",
-        "p-bandai": false,
-        "price": 59.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RG HWS Expansion set for HiNu",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "June 2021",
-        "p-bandai": true,
-        "price": 28.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RG Fin Funnel Set for Hi Nu",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "June 2021",
-        "p-bandai": true,
-        "price": 28.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Sinanju",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "February 2019",
-        "p-bandai": false,
-        "price": 45.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Crossbone Gundam X1",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "September 2018",
-        "p-bandai": false,
-        "price": 28.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Shining Gundam",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "October 2024",
-        "p-bandai": false,
-        "price": 40.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-78-2 Gundam (Ver. 2.0)",
-        "grade": "RG",
-        "size": "1/144",
-        "release": "November 2024",
-        "p-bandai": false,
-        "price": 37.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MS-06S Char's Zaku II (Ver. 2.0)",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "November 2019",
-        "p-bandai": false,
-        "price": 45.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Unicorn Gundam Ver. Ka",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "June 2018",
-        "p-bandai": false,
-        "price": 63.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-78-2 Gundam Ver. 3.0",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "June 2018",
-        "p-bandai": false,
-        "price": 56.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Neo Zeon MSN-04 Sazabi Ver. Ka",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 109.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Strike Freedom Gundam",
-        "grade": "MGEX",
-        "size": "1/100",
-        "release": "November 2023",
-        "p-bandai": false,
-        "price": 189.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Sword Impulse Gundam",
-        "grade": "MGEX",
-        "size": "1/100",
-        "release": "June 2020",
-        "p-bandai": false,
-        "price": 56.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "ZGMF-X20A Gundam Strike Freedom",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "January 2022",
-        "p-bandai": false,
-        "price": 59.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Geara Doga",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "November 2020",
-        "p-bandai": false,
-        "price": 60.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Wing Gundam Zero EW Ver. Ka",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 51.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "GN-003 Gundam Kyrios",
-        "grade": "MG",
-        "size": "1/100",
-        "release": "February 2021",
-        "p-bandai": false,
-        "price": 65.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "December 2024",
-        "p-bandai": false,
-        "price": 47.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam Vidar",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "December 2024",
-        "p-bandai": false,
-        "price": 16.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Graze Standard/Commander Type",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "June 2019",
-        "p-bandai": false,
-        "price": 13.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam G-Self Equiped with Perfect Pack",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "February 2021",
-        "p-bandai": true,
-        "price": 31.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gouf Custom",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "February 2019",
-        "p-bandai": false,
-        "price": 21.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam Calibarn",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "May 2024",
-        "p-bandai": false,
-        "price": 23.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Crossbone Gundam X1 Full Cloth (Ver. GBF)",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "January 2020",
-        "p-bandai": true,
-        "price": 27.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam Barbatos",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "December 2019",
-        "p-bandai": false,
-        "price": 12.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam Schwarzette",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "February 2024",
-        "p-bandai": false,
-        "price": 25.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Reginlaze Julia",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "January 2024",
-        "p-bandai": false,
-        "price": 17.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam Aerial",
-        "grade": "HG",
-        "size": "1/144",
-        "release": "May 2024",
-        "p-bandai": false,
-        "price": 17.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Mega Size 1/48 RX-78-2",
-        "grade": "PG",
-        "size": "1/48",
-        "release": "May 2018",
-        "p-bandai": true,
-        "price": 94.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Unicorn Gundam 02 Banshee Norn",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "June 2019",
-        "p-bandai": false,
-        "price": 264.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-0 Unicorn Gundam (Prototype Full Psycho-Frame)",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "September 2019",
-        "p-bandai": false,
-        "price": 249.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MS-06S Char's Zaku 2",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "December 2018",
-        "p-bandai": false,
-        "price": 145.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Perfect Strike Gundam",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "December 2019",
-        "p-bandai": false,
-        "price": 299.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Wing Gundam Zero Custom",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "January 2019",
-        "p-bandai": false,
-        "price": 179.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Mega Size 1/48 RX-78-2",
-        "grade": "PG",
-        "size": "1/48",
-        "release": "May 2018",
-        "p-bandai": false,
-        "price": 94.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam Exia",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "June 2020",
-        "p-bandai": false,
-        "price": 219.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Strike Freedom Gundam",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "May 2019",
-        "p-bandai": false,
-        "price": 309.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam Astray Red Frame Kai (Limited Edition)",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "January 2020",
-        "p-bandai": true,
-        "price": 274.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RAS-40 Alpha Boxer Type Mechanicore GP04",
-        "grade": "PG",
-        "size": "1/72",
-        "release": "February 2019",
-        "p-bandai": false,
-        "price": 349.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Strike Gundam",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "December 2019",
-        "p-bandai": false,
-        "price": 179.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Mega Size Model - 1/48 Scale Zaku 2",
-        "grade": "PG",
-        "size": "1/48",
-        "release": "January 2018",
-        "p-bandai": true,
-        "price": 94.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "PG Unleashed 1/60 RX-78-2 Gundam",
-        "grade": "PG",
-        "size": "1/60",
-        "release": "January 2021",
-        "p-bandai": true,
-        "price": 299.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Nu Gundam",
-        "grade": "EG",
-        "size": "1/144",
-        "release": "January 2021",
-        "p-bandai": false,
-        "price": 14.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Strike Gundam",
-        "grade": "EG",
-        "size": "1/144",
-        "release": "June 2021",
-        "p-bandai": false,
-        "price": 11.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Build Strike Exceed Galaxy",
-        "grade": "EG",
-        "size": "1/144",
-        "release": "December 2021",
-        "p-bandai": false,
-        "price": 15.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-78-2 Gundam",
-        "grade": "EG",
-        "size": "1/144",
-        "release": "January 2021",
-        "p-bandai": false,
-        "price": 10.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "LAH Gundam",
-        "grade": "EG",
-        "size": "1/144",
-        "release": "January 2022",
-        "p-bandai": false,
-        "price": 15.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MBF-02 Strike Rouge",
-        "grade": "EG",
-        "size": "1/144",
-        "release": "June 2022",
-        "p-bandai": false,
-        "price": 10.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-78-2 Gundam (Full Weapon Set)",
-        "grade": "EG",
-        "size": "1/144",
-        "release": "January 2022",
-        "p-bandai": false,
-        "price": 13.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MGSD Wing Gundam Zero EW",
-        "grade": "SD",
-        "size": "SD",
-        "release": "December 2024",
-        "p-bandai": false,
-        "price": 55.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MGSD Gundam Barbatos",
-        "grade": "SD",
-        "size": "SD",
-        "release": "January 2024",
-        "p-bandai": false,
-        "price": 52.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MGSD Freedom Gundam",
-        "grade": "SD",
-        "size": "SD",
-        "release": "June 2023",
-        "p-bandai": false,
-        "price": 52.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MSN-04 Sazabi",
-        "grade": "SD",
-        "size": "SD",
-        "release": "December 2019",
-        "p-bandai": false,
-        "price": 11.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Nu Gundam",
-        "grade": "SD",
-        "size": "SD",
-        "release": "November 2019",
-        "p-bandai": false,
-        "price": 10.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "NZ-666 Kshatriya Gundam Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "December 2019",
-        "p-bandai": false,
-        "price": 14.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MS-06F Zaku Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "January 2016",
-        "p-bandai": false,
-        "price": 8.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Aile Strike Gundam",
-        "grade": "SD",
-        "size": "SD",
-        "release": "December 2016",
-        "p-bandai": false,
-        "price": 10.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Ma Chao Gundam Barbatos Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 10.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MSZ-006 Zeta Gundam Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "May 2017",
-        "p-bandai": false,
-        "price": 8.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "God Gundam Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "January 2017",
-        "p-bandai": false,
-        "price": 12.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-0 Unicorn Gundam (Destroy Mode)",
-        "grade": "SD",
-        "size": "SD",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 10.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-78GP03 Gundam GP03 Dendrobium Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "February 2015",
-        "p-bandai": false,
-        "price": 14.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-78-2 Gundam Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "May 2015",
-        "p-bandai": false,
-        "price": 8.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "RX-93-V2 Hi-Nu Model Kit",
-        "grade": "SD",
-        "size": "SD",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 16.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Arsene Gundam X",
-        "grade": "SD",
-        "size": "SD",
-        "release": "November 2016",
-        "p-bandai": false,
-        "price": 10.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam GP04 Gerbera",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 44.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Vigna-Ghina",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 40.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MAS-005K Guncannon Detector",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "December 2019",
-        "p-bandai": false,
-        "price": 51.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "LM111E02 Gun-EZ",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "February 2018",
-        "p-bandai": false,
-        "price": 42.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "MSN-03 Jagd Doga",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "May 2019",
-        "p-bandai": false,
-        "price": 46.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Bawoo ZZ Gundam",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "January 2017",
-        "p-bandai": false,
-        "price": 39.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Efreet Kai",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "November 2018",
-        "p-bandai": false,
-        "price": 38.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "Gundam MK-III",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "December 2019",
-        "p-bandai": false,
-        "price": 44.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "ZAKU II KAI",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "November 2020",
-        "p-bandai": false,
-        "price": 47.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "XM-07B Vigna Ghina II",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "May 2019",
-        "p-bandai": false,
-        "price": 42.99,
-        "thumbnail": "",
-        "model": []
-    },
-    {
-        "name": "AMX-103 Hamma Hamma",
-        "grade": "RE",
-        "size": "1/100",
-        "release": "May 2018",
-        "p-bandai": false,
-        "price": 41.99,
-        "thumbnail": "",
-        "model": []
-    }
+  {
+		"name": "God Gundam",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "August 2022",
+		"p-bandai": false,
+		"price": 49.99,
+		"thumbnail": "God Gundam.webp",
+		"model": [
+			"God Gundam1.webp",
+			"God Gundam2.webp",
+			"God Gundam3.webp"
+		]
+	},
+	{
+		"name": "RX-0 Unicorn Gundam",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "August 2017",
+		"p-bandai": false,
+		"price": 45.99,
+		"thumbnail": "RX-0 Unicorn Gundam.webp",
+		"model": [
+			"RX-0 Unicorn Gundam1.webp",
+			"RX-0 Unicorn Gundam2.webp",
+			"RX-0 Unicorn Gundam3.webp"
+		]
+	},
+	{
+		"name": "MSN-04 Sazabi",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "August 2018",
+		"p-bandai": false,
+		"price": 57.99,
+		"thumbnail": "MSN-04 Sazabi.webp",
+		"model": [
+			"MSN-04 Sazabi1.webp",
+			"MSN-04 Sazabi2.webp",
+			"MSN-04 Sazabi3.webp"
+		]
+	},
+	{
+		"name": "Hi-v (Hi-Nu) Gundam",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "May 2021",
+		"p-bandai": false,
+		"price": 59.99,
+		"thumbnail": "Hi-v (Hi-Nu) Gundam.webp",
+		"model": [
+			"Hi-v (Hi-Nu) Gundam1.webp",
+			"Hi-v (Hi-Nu) Gundam2.webp",
+			"Hi-v (Hi-Nu) Gundam3.webp"
+		]
+	},
+	{
+		"name": "RG HWS Expansion set for HiNu",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "June 2021",
+		"p-bandai": true,
+		"price": 28.99,
+		"thumbnail": "RG HWS Expansion set for HiNu.webp",
+		"model": [
+			"RG HWS Expansion set for HiNu1.webp",
+			"RG HWS Expansion set for HiNu2.webp"
+		]
+	},
+	{
+		"name": "RG Fin Funnel Set for Hi Nu",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "June 2021",
+		"p-bandai": true,
+		"price": 28.99,
+		"thumbnail": "RG Fin Funnel Set for Hi Nu.webp",
+		"model": [
+			"RG Fin Funnel Set for Hi Nu1.webp",
+			"RG Fin Funnel Set for Hi Nu2.webp"
+		]
+	},
+	{
+		"name": "Sinanju",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "February 2019",
+		"p-bandai": false,
+		"price": 45.99,
+		"thumbnail": "Sinanju.webp",
+		"model": [
+			"Sinanju1.webp",
+			"Sinanju2.webp",
+			"Sinanju3.webp"
+		]
+	},
+	{
+		"name": "Crossbone Gundam X1",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "September 2018",
+		"p-bandai": false,
+		"price": 28.99,
+		"thumbnail": "Crossbone Gundam X1.webp",
+		"model": [
+			"Crossbone Gundam X11.webp",
+			"Crossbone Gundam X12.webp",
+			"Crossbone Gundam X13.webp"
+		]
+	},
+	{
+		"name": "Shining Gundam",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "October 2024",
+		"p-bandai": false,
+		"price": 40.99,
+		"thumbnail": "Shining Gundam.webp",
+		"model": [
+			"Shining Gundam1.webp",
+			"Shining Gundam2.webp",
+			"Shining Gundam3.webp"
+		]
+	},
+	{
+		"name": "RX-78-2 Gundam (Ver. 2.0)",
+		"grade": "RG",
+		"size": "1/144",
+		"release": "November 2024",
+		"p-bandai": false,
+		"price": 37.99,
+		"thumbnail": "RX-78-2 Gundam (Ver. 2.0).webp",
+		"model": [
+			"RX-78-2 Gundam (Ver. 2.0)1.webp",
+			"RX-78-2 Gundam (Ver. 2.0)2.webp",
+			"RX-78-2 Gundam (Ver. 2.0)3.webp"
+		]
+	},
+	{
+		"name": "MS-06S Char's Zaku II (Ver. 2.0)",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "November 2019",
+		"p-bandai": false,
+		"price": 45.99,
+		"thumbnail": "MS-06S Char's Zaku II (Ver. 2.0).webp",
+		"model": [
+			"MS-06S Char's Zaku II (Ver. 2.0)1.webp",
+			"MS-06S Char's Zaku II (Ver. 2.0)2.webp",
+			"MS-06S Char's Zaku II (Ver. 2.0)3.webp"
+		]
+	},
+	{
+		"name": "Unicorn Gundam Ver. Ka",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "June 2018",
+		"p-bandai": false,
+		"price": 63.99,
+		"thumbnail": "Unicorn Gundam Ver. Ka.webp",
+		"model": [
+			"Unicorn Gundam Ver. Ka1.webp",
+			"Unicorn Gundam Ver. Ka2.webp",
+			"Unicorn Gundam Ver. Ka3.webp"
+		]
+	},
+	{
+		"name": "RX-78-2 Gundam Ver. 3.0",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "June 2018",
+		"p-bandai": false,
+		"price": 56.99,
+		"thumbnail": "RX-78-2 Gundam Ver. 3.0.webp",
+		"model": [
+			"RX-78-2 Gundam Ver. 3.01.webp",
+			"RX-78-2 Gundam Ver. 3.02.webp",
+			"RX-78-2 Gundam Ver. 3.03.webp"
+		]
+	},
+	{
+		"name": "Neo Zeon MSN-04 Sazabi Ver. Ka",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 109.99,
+		"thumbnail": "Neo Zeon MSN-04 Sazabi Ver. Ka.webp",
+		"model": [
+			"Neo Zeon MSN-04 Sazabi Ver. Ka1.webp",
+			"Neo Zeon MSN-04 Sazabi Ver. Ka2.webp"
+		]
+	},
+	{
+		"name": "Strike Freedom Gundam",
+		"grade": "MGEX",
+		"size": "1/100",
+		"release": "November 2023",
+		"p-bandai": false,
+		"price": 189.99,
+		"thumbnail": "Strike Freedom Gundam.webp",
+		"model": [
+			"Strike Freedom Gundam1.webp",
+			"Strike Freedom Gundam2.webp",
+			"Strike Freedom Gundam3.webp"
+		]
+	},
+	{
+		"name": "Sword Impulse Gundam",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "June 2020",
+		"p-bandai": false,
+		"price": 56.99,
+		"thumbnail": "Sword Impulse Gundam.webp",
+		"model": [
+			"Sword Impulse Gundam1.webp",
+			"Sword Impulse Gundam2.webp",
+			"Sword Impulse Gundam3.webp"
+		]
+	},
+	{
+		"name": "ZGMF-X20A Gundam Strike Freedom",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "January 2022",
+		"p-bandai": false,
+		"price": 59.99,
+		"thumbnail": "ZGMF-X20A Gundam Strike Freedom.webp",
+		"model": [
+			"ZGMF-X20A Gundam Strike Freedom1.webp",
+			"ZGMF-X20A Gundam Strike Freedom2.webp",
+			"ZGMF-X20A Gundam Strike Freedom3.webp"
+		]
+	},
+	{
+		"name": "Geara Doga",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "November 2020",
+		"p-bandai": false,
+		"price": 60.99,
+		"thumbnail": "Geara Doga.webp",
+		"model": [
+			"Geara Doga1.webp",
+			"Geara Doga2.webp",
+			"Geara Doga3.webp"
+		]
+	},
+	{
+		"name": "Wing Gundam Zero EW Ver. Ka",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 51.99,
+		"thumbnail": "Wing Gundam Zero EW Ver. Ka.webp",
+		"model": [
+			"Wing Gundam Zero EW Ver. Ka1.webp",
+			"Wing Gundam Zero EW Ver. Ka2.webp",
+			"Wing Gundam Zero EW Ver. Ka3.webp"
+		]
+	},
+	{
+		"name": "GN-003 Gundam Kyrios",
+		"grade": "MG",
+		"size": "1/100",
+		"release": "February 2021",
+		"p-bandai": false,
+		"price": 65.99,
+		"thumbnail": "GN-003 Gundam Kyrios.webp",
+		"model": [
+			"GN-003 Gundam Kyrios1.webp",
+			"GN-003 Gundam Kyrios2.webp",
+			"GN-003 Gundam Kyrios3.webp"
+		]
+	},
+	{
+		"name": "Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "December 2024",
+		"p-bandai": false,
+		"price": 47.99,
+		"thumbnail": "Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver).webp",
+		"model": [
+			"Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)1.webp",
+			"Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)2.webp",
+			"Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)3.webp"
+		]
+	},
+	{
+		"name": "Gundam Vidar",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "December 2024",
+		"p-bandai": false,
+		"price": 16.99,
+		"thumbnail": "Gundam Vidar.webp",
+		"model": [
+			"Gundam Vidar1.webp",
+			"Gundam Vidar2.webp",
+			"Gundam Vidar3.webp"
+		]
+	},
+	{
+		"name": "Graze Standard/Commander Type",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "June 2019",
+		"p-bandai": false,
+		"price": 13.99,
+		"thumbnail": "Graze Standard Commander Type.webp",
+		"model": [
+			"Graze Standard Commander Type1.webp",
+			"Graze Standard Commander Type2.webp",
+			"Graze Standard Commander Type3.webp"
+		]
+	},
+	{
+		"name": "Gundam G-Self Equiped with Perfect Pack",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "February 2021",
+		"p-bandai": true,
+		"price": 31.99,
+		"thumbnail": "Gundam G-Self Equiped with Perfect Pack.webp",
+		"model": [
+			"Gundam G-Self Equiped with Perfect Pack1.webp",
+			"Gundam G-Self Equiped with Perfect Pack2.webp",
+			"Gundam G-Self Equiped with Perfect Pack3.webp"
+		]
+	},
+	{
+		"name": "Gouf Custom",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "February 2019",
+		"p-bandai": false,
+		"price": 21.99,
+		"thumbnail": "Gouf Custom.webp",
+		"model": [
+			"Gouf Custom1.webp",
+			"Gouf Custom2.webp",
+			"Gouf Custom3.webp"
+		]
+	},
+	{
+		"name": "Gundam Calibarn",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "May 2024",
+		"p-bandai": false,
+		"price": 23.99,
+		"thumbnail": "Gundam Calibarn.webp",
+		"model": [
+			"Gundam Calibarn1.webp",
+			"Gundam Calibarn2.webp",
+			"Gundam Calibarn3.webp"
+		]
+	},
+	{
+		"name": "Crossbone Gundam X1 Full Cloth (Ver. GBF)",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "January 2020",
+		"p-bandai": true,
+		"price": 27.99,
+		"thumbnail": "Crossbone Gundam X1 Full Cloth (Ver. GBF).webp",
+		"model": [
+			"Crossbone Gundam X1 Full Cloth (Ver. GBF)1.webp",
+			"Crossbone Gundam X1 Full Cloth (Ver. GBF)2.webp",
+			"Crossbone Gundam X1 Full Cloth (Ver. GBF)3.webp"
+		]
+	},
+	{
+		"name": "Gundam Barbatos",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "December 2019",
+		"p-bandai": false,
+		"price": 12.99,
+		"thumbnail": "Gundam Barbatos.webp",
+		"model": [
+			"Gundam Barbatos1.webp",
+			"Gundam Barbatos2.webp",
+			"Gundam Barbatos3.webp"
+		]
+	},
+	{
+		"name": "Gundam Schwarzette",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "February 2024",
+		"p-bandai": false,
+		"price": 25.99,
+		"thumbnail": "Gundam Schwarzette.webp",
+		"model": [
+			"Gundam Schwarzette1.webp",
+			"Gundam Schwarzette2.webp",
+			"Gundam Schwarzette3.webp"
+		]
+	},
+	{
+		"name": "Reginlaze Julia",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "January 2024",
+		"p-bandai": false,
+		"price": 17.99,
+		"thumbnail": "Reginlaze Julia.webp",
+		"model": [
+			"Reginlaze Julia1.webp",
+			"Reginlaze Julia2.webp",
+			"Reginlaze Julia3.webp"
+		]
+	},
+	{
+		"name": "Gundam Aerial",
+		"grade": "HG",
+		"size": "1/144",
+		"release": "May 2024",
+		"p-bandai": false,
+		"price": 17.99,
+		"thumbnail": "Gundam Aerial.webp",
+		"model": [
+			"Gundam Aerial1.webp",
+			"Gundam Aerial2.webp",
+			"Gundam Aerial3.webp"
+		]
+	},
+	{
+		"name": "Mega Size 1/48 RX-78-2",
+		"grade": "PG",
+		"size": "1/48",
+		"release": "May 2018",
+		"p-bandai": true,
+		"price": 94.99,
+		"thumbnail": "Mega Size RX-78-2.webp",
+		"model": [
+			"Mega Size RX-78-21.webp",
+			"Mega Size RX-78-22.webp"
+		]
+	},
+	{
+		"name": "Unicorn Gundam 02 Banshee Norn",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "June 2019",
+		"p-bandai": false,
+		"price": 264.99,
+		"thumbnail": "Unicorn Gundam 02 Banshee Norn.webp",
+		"model": [
+			"Unicorn Gundam 02 Banshee Norn1.webp",
+			"Unicorn Gundam 02 Banshee Norn2.webp",
+			"Unicorn Gundam 02 Banshee Norn3.webp"
+		]
+	},
+	{
+		"name": "RX-0 Unicorn Gundam (Prototype Full Psycho-Frame)",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "September 2019",
+		"p-bandai": false,
+		"price": 249.99,
+		"thumbnail": "RX-0 Unicorn Gundam (Prototype Full Psycho-Frame).webp",
+		"model": [
+			"RX-0 Unicorn Gundam (Prototype Full Psycho-Frame)1.webp",
+			"RX-0 Unicorn Gundam (Prototype Full Psycho-Frame)2.webp",
+			"RX-0 Unicorn Gundam (Prototype Full Psycho-Frame)3.webp"
+		]
+	},
+	{
+		"name": "MS-06S Char's Zaku 2",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "December 2018",
+		"p-bandai": false,
+		"price": 145.99,
+		"thumbnail": "MS-06S Char's Zaku 2.webp",
+		"model": [
+			"MS-06S Char's Zaku 21.webp",
+			"MS-06S Char's Zaku 22.webp",
+			"MS-06S Char's Zaku 23.webp"
+		]
+	},
+	{
+		"name": "Perfect Strike Gundam",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "December 2019",
+		"p-bandai": false,
+		"price": 299.99,
+		"thumbnail": "Perfect Strike Gundam.webp",
+		"model": [
+			"Perfect Strike Gundam1.webp",
+			"Perfect Strike Gundam2.webp",
+			"Perfect Strike Gundam3.webp"
+		]
+	},
+	{
+		"name": "Wing Gundam Zero Custom",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "January 2019",
+		"p-bandai": false,
+		"price": 179.99,
+		"thumbnail": "Wing Gundam Zero Custom.webp",
+		"model": [
+			"Wing Gundam Zero Custom1.webp",
+			"Wing Gundam Zero Custom2.webp",
+			"Wing Gundam Zero Custom3.webp"
+		]
+	},
+	{
+		"name": "Gundam Exia",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "June 2020",
+		"p-bandai": false,
+		"price": 219.99,
+		"thumbnail": "Gundam Exia.webp",
+		"model": [
+			"Gundam Exia1.webp",
+			"Gundam Exia2.webp",
+			"Gundam Exia3.webp"
+		]
+	},
+	{
+		"name": "Strike Freedom Gundam",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "May 2019",
+		"p-bandai": false,
+		"price": 309.99,
+		"thumbnail": "PG Strike Freedom Gundam.webp",
+		"model": [
+			"PG Strike Freedom Gundam1.webp",
+			"PG Strike Freedom Gundam2.webp",
+			"PG Strike Freedom Gundam3.webp"
+		]
+	},
+	{
+		"name": "Gundam Astray Red Frame Kai (Limited Edition)",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "January 2020",
+		"p-bandai": true,
+		"price": 274.99,
+		"thumbnail": "Gundam Astray Red Frame Kai (Limited Edition).webp",
+		"model": [
+			"Gundam Astray Red Frame Kai (Limited Edition)1.webp",
+			"Gundam Astray Red Frame Kai (Limited Edition)2.webp",
+			"Gundam Astray Red Frame Kai (Limited Edition)3.webp"
+		]
+	},
+	{
+		"name": "RAS-40 Alpha Boxer Type Mechanicore GP04",
+		"grade": "PG",
+		"size": "1/72",
+		"release": "February 2019",
+		"p-bandai": false,
+		"price": 349.99,
+		"thumbnail": "RAS-40 Alpha Boxer Type Mechanicore GP04.webp",
+		"model": [
+			"RAS-40 Alpha Boxer Type Mechanicore GP041.webp",
+			"RAS-40 Alpha Boxer Type Mechanicore GP042.webp",
+			"RAS-40 Alpha Boxer Type Mechanicore GP043.webp"
+		]
+	},
+	{
+		"name": "Strike Gundam",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "December 2019",
+		"p-bandai": false,
+		"price": 179.99,
+		"thumbnail": "Strike Gundam.webp",
+		"model": [
+			"Strike Gundam1.webp",
+			"Strike Gundam2.webp",
+			"Strike Gundam3.webp"
+		]
+	},
+	{
+		"name": "Mega Size Model - 1/48 Scale Zaku 2",
+		"grade": "PG",
+		"size": "1/48",
+		"release": "January 2018",
+		"p-bandai": true,
+		"price": 94.99,
+		"thumbnail": "Mega Size Model Zaku 2.webp",
+		"model": [
+			"Mega Size Model Zaku 21.webp"
+		]
+	},
+	{
+		"name": "PG Unleashed 1/60 RX-78-2 Gundam",
+		"grade": "PG",
+		"size": "1/60",
+		"release": "January 2021",
+		"p-bandai": true,
+		"price": 299.99,
+		"thumbnail": "PG Unleashed RX-78-2 Gundam.webp",
+		"model": [
+			"PG Unleashed RX-78-2 Gundam1.webp",
+			"PG Unleashed RX-78-2 Gundam2.webp",
+			"PG Unleashed RX-78-2 Gundam3.webp"
+		]
+	},
+	{
+		"name": "Nu Gundam",
+		"grade": "EG",
+		"size": "1/144",
+		"release": "January 2021",
+		"p-bandai": false,
+		"price": 14.99,
+		"thumbnail": "Nu Gundam.webp",
+		"model": [
+			"Nu Gundam1.webp",
+			"Nu Gundam2.webp",
+			"Nu Gundam3.webp"
+		]
+	},
+	{
+		"name": "Strike Gundam",
+		"grade": "EG",
+		"size": "1/144",
+		"release": "June 2021",
+		"p-bandai": false,
+		"price": 11.99,
+		"thumbnail": "EG Strike Gundam.webp",
+		"model": [
+			"EG Strike Gundam1.webp",
+			"EG Strike Gundam2.webp",
+			"EG Strike Gundam3.webp"
+		]
+	},
+	{
+		"name": "Build Strike Exceed Galaxy",
+		"grade": "EG",
+		"size": "1/144",
+		"release": "December 2021",
+		"p-bandai": false,
+		"price": 15.99,
+		"thumbnail": "Build Strike Exceed Galaxy.webp",
+		"model": [
+			"Build Strike Exceed Galaxy1.webp",
+			"Build Strike Exceed Galaxy2.webp",
+			"Build Strike Exceed Galaxy3.webp"
+		]
+	},
+	{
+		"name": "RX-78-2 Gundam",
+		"grade": "EG",
+		"size": "1/144",
+		"release": "January 2021",
+		"p-bandai": false,
+		"price": 10.99,
+		"thumbnail": "RX-78-2 Gundam.webp",
+		"model": [
+			"RX-78-2 Gundam1.webp",
+			"RX-78-2 Gundam2.webp",
+			"RX-78-2 Gundam3.webp"
+		]
+	},
+	{
+		"name": "LAH Gundam",
+		"grade": "EG",
+		"size": "1/144",
+		"release": "January 2022",
+		"p-bandai": false,
+		"price": 15.99,
+		"thumbnail": "LAH Gundam.webp",
+		"model": [
+			"LAH Gundam1.webp",
+			"LAH Gundam2.webp",
+			"LAH Gundam3.webp"
+		]
+	},
+	{
+		"name": "MBF-02 Strike Rouge",
+		"grade": "EG",
+		"size": "1/144",
+		"release": "June 2022",
+		"p-bandai": false,
+		"price": 10.99,
+		"thumbnail": "MBF-02 Strike Rouge.webp",
+		"model": [
+			"MBF-02 Strike Rouge1.webp",
+			"MBF-02 Strike Rouge2.webp",
+			"MBF-02 Strike Rouge3.webp"
+		]
+	},
+	{
+		"name": "RX-78-2 Gundam (Full Weapon Set)",
+		"grade": "EG",
+		"size": "1/144",
+		"release": "January 2022",
+		"p-bandai": false,
+		"price": 13.99,
+		"thumbnail": "RX-78-2 Gundam (Full Weapon Set).webp",
+		"model": [
+			"RX-78-2 Gundam (Full Weapon Set)1.webp",
+			"RX-78-2 Gundam (Full Weapon Set)2.webp",
+			"RX-78-2 Gundam (Full Weapon Set)3.webp"
+		]
+	},
+	{
+		"name": "MGSD Wing Gundam Zero EW",
+		"grade": "SD",
+		"size": "SD",
+		"release": "December 2024",
+		"p-bandai": false,
+		"price": 55.99,
+		"thumbnail": "MGSD Wing Gundam Zero EW.webp",
+		"model": [
+			"MGSD Wing Gundam Zero EW1.webp",
+			"MGSD Wing Gundam Zero EW2.webp",
+			"MGSD Wing Gundam Zero EW3.webp"
+		]
+	},
+	{
+		"name": "MGSD Gundam Barbatos",
+		"grade": "SD",
+		"size": "SD",
+		"release": "January 2024",
+		"p-bandai": false,
+		"price": 52.99,
+		"thumbnail": "MGSD Gundam Barbatos.webp",
+		"model": [
+			"MGSD Gundam Barbatos1.webp",
+			"MGSD Gundam Barbatos2.webp",
+			"MGSD Gundam Barbatos3.webp"
+		]
+	},
+	{
+		"name": "MGSD Freedom Gundam",
+		"grade": "SD",
+		"size": "SD",
+		"release": "June 2023",
+		"p-bandai": false,
+		"price": 52.99,
+		"thumbnail": "MGSD Freedom Gundam.webp",
+		"model": [
+			"MGSD Freedom Gundam1.webp",
+			"MGSD Freedom Gundam2.webp",
+			"MGSD Freedom Gundam3.webp"
+		]
+	},
+	{
+		"name": "MSN-04 Sazabi",
+		"grade": "SD",
+		"size": "SD",
+		"release": "December 2019",
+		"p-bandai": false,
+		"price": 11.99,
+		"thumbnail": "SD MSN-04 Sazabi.webp",
+		"model": [
+			"SD MSN-04 Sazabi1.webp",
+			"SD MSN-04 Sazabi2.webp",
+			"SD MSN-04 Sazabi3.webp"
+		]
+	},
+	{
+		"name": "Nu Gundam",
+		"grade": "SD",
+		"size": "SD",
+		"release": "November 2019",
+		"p-bandai": false,
+		"price": 10.99,
+		"thumbnail": "SD Nu Gundam.webp",
+		"model": [
+			"SD Nu Gundam1.webp",
+			"SD Nu Gundam2.webp",
+			"SD Nu Gundam3.webp"
+		]
+	},
+	{
+		"name": "NZ-666 Kshatriya Gundam Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "December 2019",
+		"p-bandai": false,
+		"price": 14.99,
+		"thumbnail": "NZ-666 Kshatriya Gundam Model Kit.webp",
+		"model": [
+			"NZ-666 Kshatriya Gundam Model Kit1.webp",
+			"NZ-666 Kshatriya Gundam Model Kit2.webp"
+		]
+	},
+	{
+		"name": "MS-06F Zaku Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "January 2016",
+		"p-bandai": false,
+		"price": 8.99,
+		"thumbnail": "MS-06F Zaku Model Kit.webp",
+		"model": [
+			"MS-06F Zaku Model Kit1.webp"
+		]
+	},
+	{
+		"name": "Aile Strike Gundam",
+		"grade": "SD",
+		"size": "SD",
+		"release": "December 2016",
+		"p-bandai": false,
+		"price": 10.99,
+		"thumbnail": "Aile Strike Gundam.webp",
+		"model": [
+			"Aile Strike Gundam1.webp",
+			"Aile Strike Gundam2.webp",
+			"Aile Strike Gundam3.webp"
+		]
+	},
+	{
+		"name": "Ma Chao Gundam Barbatos Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 10.99,
+		"thumbnail": "Ma Chao Gundam Barbatos Model Kit.webp",
+		"model": [
+			"Ma Chao Gundam Barbatos Model Kit1.webp",
+			"Ma Chao Gundam Barbatos Model Kit2.webp"
+		]
+	},
+	{
+		"name": "MSZ-006 Zeta Gundam Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "May 2017",
+		"p-bandai": false,
+		"price": 8.99,
+		"thumbnail": "MSZ-006 Zeta Gundam Model Kit.webp",
+		"model": [
+			"MSZ-006 Zeta Gundam Model Kit1.webp"
+		]
+	},
+	{
+		"name": "God Gundam Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "January 2017",
+		"p-bandai": false,
+		"price": 12.99,
+		"thumbnail": "God Gundam Model Kit.webp",
+		"model": [
+			"God Gundam Model Kit1.webp"
+		]
+	},
+	{
+		"name": "RX-0 Unicorn Gundam (Destroy Mode)",
+		"grade": "SD",
+		"size": "SD",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 10.99,
+		"thumbnail": "RX-0 Unicorn Gundam (Destroy Mode).webp",
+		"model": [
+			"RX-0 Unicorn Gundam (Destroy Mode)1.webp",
+			"RX-0 Unicorn Gundam (Destroy Mode)2.webp"
+		]
+	},
+	{
+		"name": "RX-78GP03 Gundam GP03 Dendrobium Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "February 2015",
+		"p-bandai": false,
+		"price": 14.99,
+		"thumbnail": "RX-78GP03 Gundam GP03 Dendrobium Model Kit.webp",
+		"model": [
+			"RX-78GP03 Gundam GP03 Dendrobium Model Kit1.webp"
+		]
+	},
+	{
+		"name": "RX-78-2 Gundam Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "May 2015",
+		"p-bandai": false,
+		"price": 8.99,
+		"thumbnail": "RX-78-2 Gundam Model Kit.webp",
+		"model": [
+			"RX-78-2 Gundam Model Kit1.webp"
+		]
+	},
+	{
+		"name": "RX-93-V2 Hi-Nu Model Kit",
+		"grade": "SD",
+		"size": "SD",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 16.99,
+		"thumbnail": "RX-93-V2 Hi-Nu Model Kit.webp",
+		"model": [
+			"RX-93-V2 Hi-Nu Model Kit1.webp"
+		]
+	},
+	{
+		"name": "Arsene Gundam X",
+		"grade": "SD",
+		"size": "SD",
+		"release": "November 2016",
+		"p-bandai": false,
+		"price": 10.99,
+		"thumbnail": "Arsene Gundam X.webp",
+		"model": [
+			"Arsene Gundam X1.webp",
+			"Arsene Gundam X2.webp",
+			"Arsene Gundam X3.webp"
+		]
+	},
+	{
+		"name": "Gundam GP04 Gerbera",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 44.99,
+		"thumbnail": "Gundam GP04 Gerbera.webp",
+		"model": [
+			"Gundam GP04 Gerbera1.webp",
+			"Gundam GP04 Gerbera2.webp",
+			"Gundam GP04 Gerbera3.webp"
+		]
+	},
+	{
+		"name": "Vigna-Ghina",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 40.99,
+		"thumbnail": "Vigna-Ghina.webp",
+		"model": [
+			"Vigna-Ghina1.webp",
+			"Vigna-Ghina2.webp",
+			"Vigna-Ghina3.webp"
+		]
+	},
+	{
+		"name": "MAS-005K Guncannon Detector",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "December 2019",
+		"p-bandai": false,
+		"price": 51.99,
+		"thumbnail": "MAS-005K Guncannon Detector.webp",
+		"model": [
+			"MAS-005K Guncannon Detector1.webp",
+			"MAS-005K Guncannon Detector2.webp",
+			"MAS-005K Guncannon Detector3.webp"
+		]
+	},
+	{
+		"name": "LM111E02 Gun-EZ",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "February 2018",
+		"p-bandai": false,
+		"price": 42.99,
+		"thumbnail": "LM111E02 Gun-EZ.webp",
+		"model": [
+			"LM111E02 Gun-EZ1.webp",
+			"LM111E02 Gun-EZ2.webp",
+			"LM111E02 Gun-EZ3.webp"
+		]
+	},
+	{
+		"name": "MSN-03 Jagd Doga",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "May 2019",
+		"p-bandai": false,
+		"price": 46.99,
+		"thumbnail": "MSN-03 Jagd Doga.webp",
+		"model": [
+			"MSN-03 Jagd Doga1.webp",
+			"MSN-03 Jagd Doga2.webp",
+			"MSN-03 Jagd Doga3.webp"
+		]
+	},
+	{
+		"name": "Bawoo ZZ Gundam",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "January 2017",
+		"p-bandai": false,
+		"price": 39.99,
+		"thumbnail": "Bawoo ZZ Gundam.webp",
+		"model": [
+			"Bawoo ZZ Gundam1.webp",
+			"Bawoo ZZ Gundam2.webp",
+			"Bawoo ZZ Gundam3.webp"
+		]
+	},
+	{
+		"name": "Efreet Kai",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "November 2018",
+		"p-bandai": false,
+		"price": 38.99,
+		"thumbnail": "Efreet Kai.webp",
+		"model": [
+			"Efreet Kai1.webp",
+			"Efreet Kai2.webp"
+		]
+	},
+	{
+		"name": "Gundam MK-III",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "December 2019",
+		"p-bandai": false,
+		"price": 44.99,
+		"thumbnail": "Gundam MK-III.webp",
+		"model": [
+			"Gundam MK-III1.webp",
+			"Gundam MK-III2.webp",
+			"Gundam MK-III3.webp"
+		]
+	},
+	{
+		"name": "ZAKU II KAI",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "November 2020",
+		"p-bandai": false,
+		"price": 47.99,
+		"thumbnail": "ZAKU II KAI.webp",
+		"model": [
+			"ZAKU II KAI1.webp",
+			"ZAKU II KAI2.webp",
+			"ZAKU II KAI3.webp"
+		]
+	},
+	{
+		"name": "XM-07B Vigna Ghina II",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "May 2019",
+		"p-bandai": false,
+		"price": 42.99,
+		"thumbnail": "XM-07B Vigna Ghina II.webp",
+		"model": [
+			"XM-07B Vigna Ghina II1.webp",
+			"XM-07B Vigna Ghina II2.webp",
+			"XM-07B Vigna Ghina II3.webp"
+		]
+	},
+	{
+		"name": "AMX-103 Hamma Hamma",
+		"grade": "RE",
+		"size": "1/100",
+		"release": "May 2018",
+		"p-bandai": false,
+		"price": 41.99,
+		"thumbnail": "AMX-103 Hamma Hamma.webp",
+		"model": [
+			"AMX-103 Hamma Hamma1.webp",
+			"AMX-103 Hamma Hamma2.webp",
+			"AMX-103 Hamma Hamma3.webp"
+		]
+	}
 ]

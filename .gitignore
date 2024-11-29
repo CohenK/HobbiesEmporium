@@ -40,3 +40,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+#Zone.Identifier and shield files
+*:Zone.Identifier
+*:shield
