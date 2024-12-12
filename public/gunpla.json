@@ -23,8 +23,8 @@
 		"thumbnail": "RX-0 Unicorn Gundam.webp",
 		"model": [
 			"RX-0 Unicorn Gundam1.webp",
-			"RX-0 Unicorn Gundam2.webp",
-			"RX-0 Unicorn Gundam3.webp"
+			"RX-0 Unicorn Gundam2.jpg",
+			"RX-0 Unicorn Gundam3.jpg"
 		]
 	},
 	{
@@ -36,7 +36,7 @@
 		"price": 57.99,
 		"thumbnail": "MSN-04 Sazabi.webp",
 		"model": [
-			"MSN-04 Sazabi1.webp",
+			"MSN-04 Sazabi1.jpg",
 			"MSN-04 Sazabi2.webp",
 			"MSN-04 Sazabi3.webp"
 		]
@@ -62,10 +62,10 @@
 		"release": "June 2021",
 		"p-bandai": true,
 		"price": 28.99,
-		"thumbnail": "RG HWS Expansion set for HiNu.webp",
+		"thumbnail": "RG HWS Expansion set for HiNu.jpg",
 		"model": [
-			"RG HWS Expansion set for HiNu1.webp",
-			"RG HWS Expansion set for HiNu2.webp"
+			"RG HWS Expansion set for HiNu1.jpg",
+			"RG HWS Expansion set for HiNu2.jpg"
 		]
 	},
 	{
@@ -75,10 +75,10 @@
 		"release": "June 2021",
 		"p-bandai": true,
 		"price": 28.99,
-		"thumbnail": "RG Fin Funnel Set for Hi Nu.webp",
+		"thumbnail": "RG Fin Funnel Set for Hi Nu.jpg",
 		"model": [
-			"RG Fin Funnel Set for Hi Nu1.webp",
-			"RG Fin Funnel Set for Hi Nu2.webp"
+			"RG Fin Funnel Set for Hi Nu1.jpg",
+			"RG Fin Funnel Set for Hi Nu2.jpg"
 		]
 	},
 	{
@@ -90,9 +90,9 @@
 		"price": 45.99,
 		"thumbnail": "Sinanju.webp",
 		"model": [
-			"Sinanju1.webp",
-			"Sinanju2.webp",
-			"Sinanju3.webp"
+			"Sinanju1.jpg",
+			"Sinanju2.jpg",
+			"Sinanju3.jpg"
 		]
 	},
 	{
@@ -104,7 +104,7 @@
 		"price": 28.99,
 		"thumbnail": "Crossbone Gundam X1.webp",
 		"model": [
-			"Crossbone Gundam X11.webp",
+			"Crossbone Gundam X11.jpg",
 			"Crossbone Gundam X12.webp",
 			"Crossbone Gundam X13.webp"
 		]
@@ -174,8 +174,8 @@
 		"price": 56.99,
 		"thumbnail": "RX-78-2 Gundam Ver. 3.0.webp",
 		"model": [
-			"RX-78-2 Gundam Ver. 3.01.webp",
-			"RX-78-2 Gundam Ver. 3.02.webp",
+			"RX-78-2 Gundam Ver. 3.01.jpeg",
+			"RX-78-2 Gundam Ver. 3.02.jpg",
 			"RX-78-2 Gundam Ver. 3.03.webp"
 		]
 	},
@@ -188,7 +188,7 @@
 		"price": 109.99,
 		"thumbnail": "Neo Zeon MSN-04 Sazabi Ver. Ka.webp",
 		"model": [
-			"Neo Zeon MSN-04 Sazabi Ver. Ka1.webp",
+			"Neo Zeon MSN-04 Sazabi Ver. Ka1.jpeg",
 			"Neo Zeon MSN-04 Sazabi Ver. Ka2.webp"
 		]
 	},
@@ -229,7 +229,7 @@
 		"price": 59.99,
 		"thumbnail": "ZGMF-X20A Gundam Strike Freedom.webp",
 		"model": [
-			"ZGMF-X20A Gundam Strike Freedom1.webp",
+			"ZGMF-X20A Gundam Strike Freedom1.jpg",
 			"ZGMF-X20A Gundam Strike Freedom2.webp",
 			"ZGMF-X20A Gundam Strike Freedom3.webp"
 		]
@@ -241,11 +241,11 @@
 		"release": "November 2020",
 		"p-bandai": false,
 		"price": 60.99,
-		"thumbnail": "Geara Doga.webp",
+		"thumbnail": "Geara Doga.jpg",
 		"model": [
 			"Geara Doga1.webp",
-			"Geara Doga2.webp",
-			"Geara Doga3.webp"
+			"Geara Doga2.jpg",
+			"Geara Doga3.jpg"
 		]
 	},
 	{
@@ -271,7 +271,7 @@
 		"price": 65.99,
 		"thumbnail": "GN-003 Gundam Kyrios.webp",
 		"model": [
-			"GN-003 Gundam Kyrios1.webp",
+			"GN-003 Gundam Kyrios1.jpg",
 			"GN-003 Gundam Kyrios2.webp",
 			"GN-003 Gundam Kyrios3.webp"
 		]
@@ -283,7 +283,7 @@
 		"release": "December 2024",
 		"p-bandai": false,
 		"price": 47.99,
-		"thumbnail": "Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver).webp",
+		"thumbnail": "Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver).jpg",
 		"model": [
 			"Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)1.webp",
 			"Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)2.webp",
@@ -342,7 +342,7 @@
 		"thumbnail": "Gouf Custom.webp",
 		"model": [
 			"Gouf Custom1.webp",
-			"Gouf Custom2.webp",
+			"Gouf Custom2.jpg",
 			"Gouf Custom3.webp"
 		]
 	},
@@ -369,9 +369,9 @@
 		"price": 27.99,
 		"thumbnail": "Crossbone Gundam X1 Full Cloth (Ver. GBF).webp",
 		"model": [
-			"Crossbone Gundam X1 Full Cloth (Ver. GBF)1.webp",
-			"Crossbone Gundam X1 Full Cloth (Ver. GBF)2.webp",
-			"Crossbone Gundam X1 Full Cloth (Ver. GBF)3.webp"
+			"Crossbone Gundam X1 Full Cloth (Ver. GBF)1.jpg",
+			"Crossbone Gundam X1 Full Cloth (Ver. GBF)2.jpg",
+			"Crossbone Gundam X1 Full Cloth (Ver. GBF)3.jpg"
 		]
 	},
 	{
@@ -383,7 +383,7 @@
 		"price": 12.99,
 		"thumbnail": "Gundam Barbatos.webp",
 		"model": [
-			"Gundam Barbatos1.webp",
+			"Gundam Barbatos1.jpg",
 			"Gundam Barbatos2.webp",
 			"Gundam Barbatos3.webp"
 		]
@@ -439,7 +439,7 @@
 		"price": 94.99,
 		"thumbnail": "Mega Size RX-78-2.webp",
 		"model": [
-			"Mega Size RX-78-21.webp",
+			"Mega Size RX-78-21.jpg",
 			"Mega Size RX-78-22.webp"
 		]
 	},
@@ -524,7 +524,7 @@
 		"model": [
 			"Gundam Exia1.webp",
 			"Gundam Exia2.webp",
-			"Gundam Exia3.webp"
+			"Gundam Exia3.jpg"
 		]
 	},
 	{
@@ -550,9 +550,9 @@
 		"price": 274.99,
 		"thumbnail": "Gundam Astray Red Frame Kai (Limited Edition).webp",
 		"model": [
-			"Gundam Astray Red Frame Kai (Limited Edition)1.webp",
-			"Gundam Astray Red Frame Kai (Limited Edition)2.webp",
-			"Gundam Astray Red Frame Kai (Limited Edition)3.webp"
+			"Gundam Astray Red Frame Kai (Limited Edition)1.jpg",
+			"Gundam Astray Red Frame Kai (Limited Edition)2.jpg",
+			"Gundam Astray Red Frame Kai (Limited Edition)3.jpg"
 		]
 	},
 	{
@@ -756,11 +756,11 @@
 		"release": "December 2019",
 		"p-bandai": false,
 		"price": 11.99,
-		"thumbnail": "SD MSN-04 Sazabi.webp",
+		"thumbnail": "SD MSN-04 Sazabi.jpg",
 		"model": [
-			"SD MSN-04 Sazabi1.webp",
-			"SD MSN-04 Sazabi2.webp",
-			"SD MSN-04 Sazabi3.webp"
+			"SD MSN-04 Sazabi1.jpg",
+			"SD MSN-04 Sazabi2.jpg",
+			"SD MSN-04 Sazabi3.jpg"
 		]
 	},
 	{
@@ -770,11 +770,11 @@
 		"release": "November 2019",
 		"p-bandai": false,
 		"price": 10.99,
-		"thumbnail": "SD Nu Gundam.webp",
+		"thumbnail": "SD Nu Gundam.jpg",
 		"model": [
-			"SD Nu Gundam1.webp",
-			"SD Nu Gundam2.webp",
-			"SD Nu Gundam3.webp"
+			"SD Nu Gundam1.jpg",
+			"SD Nu Gundam2.jpg",
+			"SD Nu Gundam3.jpg"
 		]
 	},
 	{
@@ -784,10 +784,10 @@
 		"release": "December 2019",
 		"p-bandai": false,
 		"price": 14.99,
-		"thumbnail": "NZ-666 Kshatriya Gundam Model Kit.webp",
+		"thumbnail": "NZ-666 Kshatriya Gundam Model Kit.jpg",
 		"model": [
-			"NZ-666 Kshatriya Gundam Model Kit1.webp",
-			"NZ-666 Kshatriya Gundam Model Kit2.webp"
+			"NZ-666 Kshatriya Gundam Model Kit1.jpg",
+			"NZ-666 Kshatriya Gundam Model Kit2.jpg"
 		]
 	},
 	{
@@ -797,9 +797,9 @@
 		"release": "January 2016",
 		"p-bandai": false,
 		"price": 8.99,
-		"thumbnail": "MS-06F Zaku Model Kit.webp",
+		"thumbnail": "MS-06F Zaku Model Kit.jpg",
 		"model": [
-			"MS-06F Zaku Model Kit1.webp"
+			"MS-06F Zaku Model Kit1.jpg"
 		]
 	},
 	{
@@ -811,7 +811,7 @@
 		"price": 10.99,
 		"thumbnail": "Aile Strike Gundam.webp",
 		"model": [
-			"Aile Strike Gundam1.webp",
+			"Aile Strike Gundam1.jpg",
 			"Aile Strike Gundam2.webp",
 			"Aile Strike Gundam3.webp"
 		]
@@ -823,10 +823,10 @@
 		"release": "November 2018",
 		"p-bandai": false,
 		"price": 10.99,
-		"thumbnail": "Ma Chao Gundam Barbatos Model Kit.webp",
+		"thumbnail": "Ma Chao Gundam Barbatos Model Kit.jpg",
 		"model": [
 			"Ma Chao Gundam Barbatos Model Kit1.webp",
-			"Ma Chao Gundam Barbatos Model Kit2.webp"
+			"Ma Chao Gundam Barbatos Model Kit2.jpg"
 		]
 	},
 	{
@@ -850,7 +850,7 @@
 		"price": 12.99,
 		"thumbnail": "God Gundam Model Kit.webp",
 		"model": [
-			"God Gundam Model Kit1.webp"
+			"God Gundam Model Kit1.jpg"
 		]
 	},
 	{
@@ -862,7 +862,7 @@
 		"price": 10.99,
 		"thumbnail": "RX-0 Unicorn Gundam (Destroy Mode).webp",
 		"model": [
-			"RX-0 Unicorn Gundam (Destroy Mode)1.webp",
+			"RX-0 Unicorn Gundam (Destroy Mode)1.jpg",
 			"RX-0 Unicorn Gundam (Destroy Mode)2.webp"
 		]
 	},
@@ -875,7 +875,7 @@
 		"price": 14.99,
 		"thumbnail": "RX-78GP03 Gundam GP03 Dendrobium Model Kit.webp",
 		"model": [
-			"RX-78GP03 Gundam GP03 Dendrobium Model Kit1.webp"
+			"RX-78GP03 Gundam GP03 Dendrobium Model Kit1.jpg"
 		]
 	},
 	{
@@ -887,7 +887,7 @@
 		"price": 8.99,
 		"thumbnail": "RX-78-2 Gundam Model Kit.webp",
 		"model": [
-			"RX-78-2 Gundam Model Kit1.webp"
+			"RX-78-2 Gundam Model Kit1.jpg"
 		]
 	},
 	{
@@ -925,8 +925,8 @@
 		"price": 44.99,
 		"thumbnail": "Gundam GP04 Gerbera.webp",
 		"model": [
-			"Gundam GP04 Gerbera1.webp",
-			"Gundam GP04 Gerbera2.webp",
+			"Gundam GP04 Gerbera1.jpg",
+			"Gundam GP04 Gerbera2.jpg",
 			"Gundam GP04 Gerbera3.webp"
 		]
 	},
@@ -967,7 +967,7 @@
 		"price": 42.99,
 		"thumbnail": "LM111E02 Gun-EZ.webp",
 		"model": [
-			"LM111E02 Gun-EZ1.webp",
+			"LM111E02 Gun-EZ1.jpg",
 			"LM111E02 Gun-EZ2.webp",
 			"LM111E02 Gun-EZ3.webp"
 		]
@@ -981,7 +981,7 @@
 		"price": 46.99,
 		"thumbnail": "MSN-03 Jagd Doga.webp",
 		"model": [
-			"MSN-03 Jagd Doga1.webp",
+			"MSN-03 Jagd Doga1.jpg",
 			"MSN-03 Jagd Doga2.webp",
 			"MSN-03 Jagd Doga3.webp"
 		]
@@ -995,7 +995,7 @@
 		"price": 39.99,
 		"thumbnail": "Bawoo ZZ Gundam.webp",
 		"model": [
-			"Bawoo ZZ Gundam1.webp",
+			"Bawoo ZZ Gundam1.jpg",
 			"Bawoo ZZ Gundam2.webp",
 			"Bawoo ZZ Gundam3.webp"
 		]
@@ -1009,8 +1009,8 @@
 		"price": 38.99,
 		"thumbnail": "Efreet Kai.webp",
 		"model": [
-			"Efreet Kai1.webp",
-			"Efreet Kai2.webp"
+			"Efreet Kai1.jpg",
+			"Efreet Kai2.jpg"
 		]
 	},
 	{
@@ -1022,9 +1022,9 @@
 		"price": 44.99,
 		"thumbnail": "Gundam MK-III.webp",
 		"model": [
-			"Gundam MK-III1.webp",
+			"Gundam MK-III1.jpg",
 			"Gundam MK-III2.webp",
-			"Gundam MK-III3.webp"
+			"Gundam MK-III3.jpg"
 		]
 	},
 	{
@@ -1036,7 +1036,7 @@
 		"price": 47.99,
 		"thumbnail": "ZAKU II KAI.webp",
 		"model": [
-			"ZAKU II KAI1.webp",
+			"ZAKU II KAI1.jpg",
 			"ZAKU II KAI2.webp",
 			"ZAKU II KAI3.webp"
 		]
@@ -1064,7 +1064,7 @@
 		"price": 41.99,
 		"thumbnail": "AMX-103 Hamma Hamma.webp",
 		"model": [
-			"AMX-103 Hamma Hamma1.webp",
+			"AMX-103 Hamma Hamma1.jpg",
 			"AMX-103 Hamma Hamma2.webp",
 			"AMX-103 Hamma Hamma3.webp"
 		]

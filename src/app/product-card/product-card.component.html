@@ -1,0 +1,15 @@
+<div class="card">
+    <img class="card-img-top" src={{item.thumbnail}} alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title m-0">{{item.name}}</h3>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Grade: {{item.grade}}</li>
+      <li class="list-group-item">Size: {{item.size}}</li>
+      @if (item.premium) {
+        <li class="list-group-item">P-Bandai Exclusive</li>
+      }
+      <li class="list-group-item">Relase Date: {{item.release}}</li>
+      <li class="list-group-item">Price: {{item.price}}</li>
+    </ul>
+  </div>
