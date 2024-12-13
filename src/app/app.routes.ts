@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ShoppingPageComponent } from './shopping-page/shopping-page.component';
 
 export const routes: Routes = [
-    {path:'', component: AppComponent},
+    {path:'', component: ShoppingPageComponent},
     {path: '**', component: NotFoundComponent}
 ];
