@@ -1,0 +1,20 @@
+<form class="form-inline">
+    <div class="d-flex">
+        <div class="col-sm-9 col-md-9 col-lg-10">
+            <input 
+            class="form-control mr-sm-2" 
+            type="search" 
+            placeholder="Search" 
+            aria-label="Search"
+            [(ngModel)]="searchText">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-2 mb-3">
+            <button 
+            class="btn btn-outline-dark my-2 my-sm-0 rounded-right" 
+            type="submit"
+            (click)="$event.preventDefault(); searchItem();">
+            Search
+        </button>
+        </div>
+    </div>
+</form>

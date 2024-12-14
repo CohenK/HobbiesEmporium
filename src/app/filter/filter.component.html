@@ -1,0 +1,13 @@
+<div class="border border-dark rounded">
+    <ul class="p-0 m-0">
+        @for (filter of filters; track $index) {
+            <li>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="checkbox"> {{filter}}
+                    </label>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

@@ -9,8 +9,10 @@
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Grade: {{item.grade}}</li>
     <li class="list-group-item">Size: {{item.size}}</li>
-    @if (item.premium) {
-      <li class="list-group-item">P-Bandai Exclusive</li>
+    @if (item.pbandai) {
+      <li class="list-group-item">P-Bandai Exclusive: Yes</li>
+    }@else {
+      <li class="list-group-item">P-Bandai Exclusive: No</li>
     }
     <li class="list-group-item">Relase Date: {{item.release}}</li>
     <li class="list-group-item">Price: {{item.price}}</li>
