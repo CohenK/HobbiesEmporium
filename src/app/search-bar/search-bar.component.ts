@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import events from './../../shared/services/EventService';
 
 @Component({
   selector: 'search-bar',
@@ -11,6 +12,6 @@ import { FormsModule } from '@angular/forms';
 export class SearchBarComponent {
   searchText = '';
   searchItem(){
-    console.log(`Searching for ${this.searchText}`)
+    events.emit('searchProduct', this.searchText);
   }
 }

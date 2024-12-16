@@ -3,6 +3,10 @@ filter{
     top: 20%;
 }
 
+.content{
+    min-height: 80vh;
+}
+
 /* .search-sort{
     position: sticky;
     top: 12%;
