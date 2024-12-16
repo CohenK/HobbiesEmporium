@@ -15,12 +15,10 @@ import events from './../../shared/services/EventService';
   styleUrl: './shopping-page.component.css'
 })
 export class ShoppingPageComponent implements OnInit{
-  @Input() products: Item[] = [];
-  @Input() searchText: string = "";
+  products: Item[] = [];
 
   constructor(private dataFetchService: DataFetchService){
     events.listen('searchProduct',(searchTerm: any)=>{
-      console.log(`searching for ${searchTerm} in product list`)
       if(searchTerm === " "){
         this.displayItems = this.products;
       }
@@ -29,11 +27,20 @@ export class ShoppingPageComponent implements OnInit{
       }
       console.log(this.displayItems);
     })
+
+    events.listen('sort',(value:any)=>{
+      console.log(value)
+      if(value===0){
+        this.displayItems = [...this.products];
+      }else{
+        this.displayItems.sort(value)
+      }
+    })
   }
   ngOnInit(): void {
     this.dataFetchService.getItems().subscribe((data: any)=>{
       this.products = data;
-      this.displayItems = this.products;
+      this.displayItems = [...this.products];
     });
   }
   displayItems: Item[] = [];

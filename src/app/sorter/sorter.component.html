@@ -1,9 +1,13 @@
 <div class="col">
-    <select class="form-select">
-        <option value="0">price &uarr;</option>
-        <option value="1">price &darr;</option>
-        <option value="2">alphabetical</option>
-        <option value="3">release &uarr;</option>
-        <option value="4">release &darr;</option>
+    <select class="form-select"
+        [(ngModel)]="listSorter"
+        (ngModelChange)="sorterChanged($event)">
+        <option value=0>-</option>
+        <option value=1>price &uarr;</option>
+        <option value=2>price &darr;</option>
+        <option value=3>alphabetical &uarr;</option>
+        <option value=4>alphabetical &darr;</option>
+        <option value=5>release &uarr;</option>
+        <option value=6>release &darr;</option>
     </select>
 </div>
