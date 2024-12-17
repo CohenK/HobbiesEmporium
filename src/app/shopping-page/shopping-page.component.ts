@@ -16,6 +16,7 @@ import events from './../../shared/services/EventService';
 })
 export class ShoppingPageComponent implements OnInit{
   products: Item[] = [];
+  temp: Item[] = [];
 
   constructor(private dataFetchService: DataFetchService){
     events.listen('searchProduct',(searchTerm: any)=>{
@@ -23,7 +24,8 @@ export class ShoppingPageComponent implements OnInit{
         this.displayItems = this.products;
       }
       else{
-        this.displayItems = this.products.filter(item => item.name.toUpperCase().includes(searchTerm.toUpperCase()))
+        this.displayItems = this.products.filter(item => item.name.toUpperCase().includes(searchTerm.toUpperCase()));
+        this.temp = [...this.displayItems];
       }
       console.log(this.displayItems);
     })
@@ -31,7 +33,7 @@ export class ShoppingPageComponent implements OnInit{
     events.listen('sort',(value:any)=>{
       console.log(value)
       if(value===0){
-        this.displayItems = [...this.products];
+        this.displayItems = [...this.temp];
       }else{
         this.displayItems.sort(value)
       }

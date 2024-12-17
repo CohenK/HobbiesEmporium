@@ -13,5 +13,11 @@ export class SearchBarComponent {
   searchText = '';
   searchItem(){
     events.emit('searchProduct', this.searchText);
+    events.emit('resetSort',0);
+  }
+  clearSearch(){
+    this.searchText = "";
+    events.emit('searchProduct', this.searchText)
+    events.emit('resetSort', 0);
   }
 }

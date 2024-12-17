@@ -1,13 +1,43 @@
-<div class="border border-dark rounded">
-    <ul class="p-0 m-0">
-        @for (filter of filters; track $index) {
-            <li>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="checkbox"> {{filter}}
-                    </label>
-                </div>
-            </li>
-        }
-    </ul>
+<div class="d-flex-column">
+    <div class="border border-dark rounded mb-2">
+        <ul class="p-0 m-0">
+            @for (filter of gradeFilters; track $index) {
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="checkbox"> {{filter.filter}}
+                        </label>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+    
+    <div class="border border-dark rounded mb-2">
+        <ul class="p-0 m-0">
+            @for (filter of sizeFilters; track $index) {
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="checkbox"> {{filter.filter}}
+                        </label>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+    
+    <div class="border border-dark rounded">
+        <ul class="p-0 m-0">
+            @for (filter of premiumFilters; track $index) {
+                <li>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="checkbox"> {{filter.filter}}
+                        </label>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
 </div>

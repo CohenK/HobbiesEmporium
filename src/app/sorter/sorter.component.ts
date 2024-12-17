@@ -12,12 +12,6 @@ import events from './../../shared/services/EventService'
 })
 
 export class SorterComponent {
-  DateConversion(data: string){
-    const[month,year]=data.split('');
-    const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    return [Number(year),months.indexOf(month)];
-  }
-  
   sorters = [
     0,
     (item1: Item, item2: Item) =>{
@@ -43,9 +37,14 @@ export class SorterComponent {
       return item1Date < item2Date ? 1:-1;
     }
   ]
+  constructor(){
+    events.listen('resetSort', (value:any)=>{
+      this.sorterChanged(this.listSorter);
+    })
+  }
 
   listSorter = 0      
-
+ 
 
   sorterChanged(value: any){
     events.emit('sort', this.sorters[value])

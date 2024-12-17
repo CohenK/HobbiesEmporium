@@ -1,3 +1,11 @@
-button{
+.searchButton{
     width: 100%;
+}
+.input-group{
+    position: relative;
+}
+.btn-close{
+    position: absolute;
+    right: 1%;
+    top: 25%;
 }
