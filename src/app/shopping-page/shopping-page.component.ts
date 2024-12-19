@@ -16,34 +16,93 @@ import events from './../../shared/services/EventService';
 })
 export class ShoppingPageComponent implements OnInit{
   products: Item[] = [];
-  temp: Item[] = [];
+  searchResult: Item[] = [];
+  sortResult: Item[] = [];
+  filteredResult: Item[] = [];
+  displayedItems: Item[] = [];
+
+  //Most recent history of user search for sequential processing of items: search > sort > filter
+  //Makes item results robust so one phase of the item manipulation doesn't forget the needs of the other phases
+  //Updated when each corresponding event is called
+  recentQueries = {searchTerm: "", sort:()=>{}, filters:{}}; 
 
   constructor(private dataFetchService: DataFetchService){
     events.listen('searchProduct',(searchTerm: any)=>{
+      this.recentQueries.searchTerm = searchTerm; 
       if(searchTerm === " "){
-        this.displayItems = this.products;
+        this.searchResult = this.products;
       }
       else{
-        this.displayItems = this.products.filter(item => item.name.toUpperCase().includes(searchTerm.toUpperCase()));
-        this.temp = [...this.displayItems];
+        this.searchResult = this.products.filter(item => item.name.toUpperCase().includes(searchTerm.toUpperCase()));
       }
-      console.log(this.displayItems);
+      events.emit('sort',this.recentQueries.sort)
     })
 
     events.listen('sort',(value:any)=>{
-      console.log(value)
+      this.recentQueries.sort = value;
+      this.sortResult = [...this.searchResult];
       if(value===0){
-        this.displayItems = [...this.temp];
+        this.sortResult = [...this.searchResult];
       }else{
-        this.displayItems.sort(value)
+        this.sortResult.sort(value)
       }
+      events.emit('filterChanged',this.recentQueries.filters)
+    })
+
+    events.listen('filterChanged',(filters: any)=>{
+      this.recentQueries.filters = filters;
+      let gradeTemp: Set<Item> = new Set();
+      this.filteredResult = [...this.sortResult];
+
+      if(filters.gradeFilters.length > 0 && filters.gradeFilters.length < 7){
+        this.filteredResult.forEach(product=>{
+          filters.gradeFilters.forEach((filter: string)=> {
+            if(product.grade === filter){
+              gradeTemp.add(product);
+            }
+          });
+        })
+      }else{
+        gradeTemp = new Set(this.sortResult);
+      }
+      let sizeTemp: Set<Item> = new Set();
+
+      if(filters.sizeFilters.length > 0 && filters.sizeFilters.length < 6){
+        gradeTemp.forEach((item: Item)=>{
+          filters.sizeFilters.forEach((filter:string)=>{
+            if(item.size === filter){
+              sizeTemp.add(item);
+            }
+          })
+        })
+      }else{
+        sizeTemp = gradeTemp;
+      }
+      if(filters.premiumFilters.length === 1){
+        if(filters.premiumFilters[0] === 'Yes'){
+          sizeTemp.forEach(item=>{
+            if(item.pbandai === false){
+              sizeTemp.delete(item);
+            }
+          })
+        }else{
+          sizeTemp.forEach(item=>{
+            if(item.pbandai === true){
+              sizeTemp.delete(item);
+            }
+          })
+        }
+      }
+      this.filteredResult = Array.from(sizeTemp);
+      this.displayedItems = [...this.filteredResult];
     })
   }
   ngOnInit(): void {
     this.dataFetchService.getItems().subscribe((data: any)=>{
       this.products = data;
-      this.displayItems = [...this.products];
+      this.searchResult = [...this.products];
+      this.sortResult = [...this.products];
+      this.displayedItems = [...this.products];
     });
   }
-  displayItems: Item[] = [];
 }

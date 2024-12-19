@@ -1,39 +1,52 @@
 <div class="d-flex-column">
+    <h5>Grade Filters:</h5>
     <div class="border border-dark rounded mb-2">
         <ul class="p-0 m-0">
             @for (filter of gradeFilters; track $index) {
                 <li>
                     <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="checkbox"> {{filter.filter}}
+                        <label class="form-check-label" [ngClass]="filter.isActive? 'text-primary' : ''">
+                            <input 
+                                type="checkbox"
+                                class="checkbox"
+                                [checked]="filter.isActive"
+                                (click)="toggleFilter(filter, filters.gradeFilters)"> {{filter.filter}}
                         </label>
                     </div>
                 </li>
             }
         </ul>
     </div>
-    
+    <h5>Size Filters:</h5>
     <div class="border border-dark rounded mb-2">
         <ul class="p-0 m-0">
             @for (filter of sizeFilters; track $index) {
                 <li>
                     <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="checkbox"> {{filter.filter}}
+                        <label class="form-check-label" [ngClass]="filter.isActive? 'text-primary' : ''">
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                [checked]="filter.isActive"
+                                (click)="toggleFilter(filter, filters.sizeFilters)"> {{filter.filter}}
                         </label>
                     </div>
                 </li>
             }
         </ul>
     </div>
-    
+    <h5>Premium Filters:</h5>
     <div class="border border-dark rounded">
         <ul class="p-0 m-0">
             @for (filter of premiumFilters; track $index) {
                 <li>
                     <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="checkbox"> {{filter.filter}}
+                        <label class="form-check-label" [ngClass]="filter.isActive? 'text-primary' : ''">
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                [checked]="filter.isActive"
+                                (click)="toggleFilter(filter,filters.premiumFilters)"> {{filter.filter}}
                         </label>
                     </div>
                 </li>

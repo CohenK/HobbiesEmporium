@@ -1,7 +1,7 @@
 [
   {
 		"name": "God Gundam",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2022-08-13",
 		"pbandai": false,
@@ -15,7 +15,7 @@
 	},
 	{
 		"name": "RX-0 Unicorn Gundam",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2017-08-23",
 		"pbandai": false,
@@ -29,7 +29,7 @@
 	},
 	{
 		"name": "MSN-04 Sazabi",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2018-08-03",
 		"pbandai": false,
@@ -43,7 +43,7 @@
 	},
 	{
 		"name": "Hi-v (Hi-Nu) Gundam",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2021-05-11",
 		"pbandai": false,
@@ -57,7 +57,7 @@
 	},
 	{
 		"name": "RG HWS Expansion set for HiNu",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2021-06-01",
 		"pbandai": true,
@@ -70,7 +70,7 @@
 	},
 	{
 		"name": "RG Fin Funnel Set for Hi Nu",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2021-06-25",
 		"pbandai": true,
@@ -83,7 +83,7 @@
 	},
 	{
 		"name": "Sinanju",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2019-02-06",
 		"pbandai": false,
@@ -97,7 +97,7 @@
 	},
 	{
 		"name": "Crossbone Gundam X1",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2018-09-10",
 		"pbandai": false,
@@ -111,7 +111,7 @@
 	},
 	{
 		"name": "Shining Gundam",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2024-10-17",
 		"pbandai": false,
@@ -125,7 +125,7 @@
 	},
 	{
 		"name": "RX-78-2 Gundam (Ver. 2.0)",
-		"grade": "RG",
+		"grade": "Real Grade",
 		"size": "1/144",
 		"release": "2024-11-03",
 		"pbandai": false,
@@ -139,7 +139,7 @@
 	},
 	{
 		"name": "MS-06S Char's Zaku II (Ver. 2.0)",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2019-11-11",
 		"pbandai": false,
@@ -153,7 +153,7 @@
 	},
 	{
 		"name": "Unicorn Gundam Ver. Ka",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2018-06-04",
 		"pbandai": false,
@@ -167,7 +167,7 @@
 	},
 	{
 		"name": "RX-78-2 Gundam Ver. 3.0",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2018-06-01",
 		"pbandai": false,
@@ -181,7 +181,7 @@
 	},
 	{
 		"name": "Neo Zeon MSN-04 Sazabi Ver. Ka",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2018-11-12",
 		"pbandai": false,
@@ -208,7 +208,7 @@
 	},
 	{
 		"name": "Sword Impulse Gundam",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2020-06-15",
 		"pbandai": false,
@@ -222,7 +222,7 @@
 	},
 	{
 		"name": "ZGMF-X20A Gundam Strike Freedom",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2022-01-14",
 		"pbandai": false,
@@ -236,7 +236,7 @@
 	},
 	{
 		"name": "Geara Doga",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2020-11-11",
 		"pbandai": false,
@@ -250,7 +250,7 @@
 	},
 	{
 		"name": "Wing Gundam Zero EW Ver. Ka",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2018-11-03",
 		"pbandai": false,
@@ -264,7 +264,7 @@
 	},
 	{
 		"name": "GN-003 Gundam Kyrios",
-		"grade": "MG",
+		"grade": "Master Grade",
 		"size": "1/100",
 		"release": "2021-02-13",
 		"pbandai": false,
@@ -278,7 +278,7 @@
 	},
 	{
 		"name": "Zaku Mass Production Type - Big Gun (Gundam Thunderbolt Anime Color Ver)",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2024-12-12",
 		"pbandai": false,
@@ -292,7 +292,7 @@
 	},
 	{
 		"name": "Gundam Vidar",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2024-12-04",
 		"pbandai": false,
@@ -306,7 +306,7 @@
 	},
 	{
 		"name": "Graze Standard/Commander Type",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2019-06-09",
 		"pbandai": false,
@@ -320,7 +320,7 @@
 	},
 	{
 		"name": "Gundam G-Self Equiped with Perfect Pack",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2021-02-28",
 		"pbandai": true,
@@ -334,7 +334,7 @@
 	},
 	{
 		"name": "Gouf Custom",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2019-02-26",
 		"pbandai": false,
@@ -348,7 +348,7 @@
 	},
 	{
 		"name": "Gundam Calibarn",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2024-05-11",
 		"pbandai": false,
@@ -362,7 +362,7 @@
 	},
 	{
 		"name": "Crossbone Gundam X1 Full Cloth (Ver. GBF)",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2020-01-19",
 		"pbandai": true,
@@ -376,7 +376,7 @@
 	},
 	{
 		"name": "Gundam Barbatos",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2019-12-01",
 		"pbandai": false,
@@ -390,7 +390,7 @@
 	},
 	{
 		"name": "Gundam Schwarzette",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2024-02-06",
 		"pbandai": false,
@@ -404,7 +404,7 @@
 	},
 	{
 		"name": "Reginlaze Julia",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2024-01-05",
 		"pbandai": false,
@@ -418,7 +418,7 @@
 	},
 	{
 		"name": "Gundam Aerial",
-		"grade": "HG",
+		"grade": "High Grade",
 		"size": "1/144",
 		"release": "2024-05-12",
 		"pbandai": false,
@@ -432,7 +432,7 @@
 	},
 	{
 		"name": "Mega Size 1/48 RX-78-2",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/48",
 		"release": "2018-05-16",
 		"pbandai": true,
@@ -445,7 +445,7 @@
 	},
 	{
 		"name": "Unicorn Gundam 02 Banshee Norn",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2019-06-03",
 		"pbandai": false,
@@ -459,7 +459,7 @@
 	},
 	{
 		"name": "RX-0 Unicorn Gundam (Prototype Full Psycho-Frame)",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2019-09-11",
 		"pbandai": false,
@@ -473,7 +473,7 @@
 	},
 	{
 		"name": "MS-06S Char's Zaku 2",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2018-12-24",
 		"pbandai": false,
@@ -487,7 +487,7 @@
 	},
 	{
 		"name": "Perfect Strike Gundam",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2019-12-25",
 		"pbandai": false,
@@ -501,7 +501,7 @@
 	},
 	{
 		"name": "Wing Gundam Zero Custom",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2019-01-09",
 		"pbandai": false,
@@ -515,7 +515,7 @@
 	},
 	{
 		"name": "Gundam Exia",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2020-06-05",
 		"pbandai": false,
@@ -529,7 +529,7 @@
 	},
 	{
 		"name": "Strike Freedom Gundam",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2019-05-11",
 		"pbandai": false,
@@ -543,7 +543,7 @@
 	},
 	{
 		"name": "Gundam Astray Red Frame Kai (Limited Edition)",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2020-01-19",
 		"pbandai": true,
@@ -557,7 +557,7 @@
 	},
 	{
 		"name": "RAS-40 Alpha Boxer Type Mechanicore GP04",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/72",
 		"release": "2019-02-23",
 		"pbandai": false,
@@ -571,7 +571,7 @@
 	},
 	{
 		"name": "Strike Gundam",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2019-12-11",
 		"pbandai": false,
@@ -585,7 +585,7 @@
 	},
 	{
 		"name": "Mega Size Model - 1/48 Scale Zaku 2",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/48",
 		"release": "2018-01-14",
 		"pbandai": true,
@@ -597,7 +597,7 @@
 	},
 	{
 		"name": "PG Unleashed 1/60 RX-78-2 Gundam",
-		"grade": "PG",
+		"grade": "Perfect Grade",
 		"size": "1/60",
 		"release": "2021-01-03",
 		"pbandai": true,
@@ -611,7 +611,7 @@
 	},
 	{
 		"name": "Nu Gundam",
-		"grade": "EG",
+		"grade": "Entry Grade",
 		"size": "1/144",
 		"release": "2021-03-14",
 		"pbandai": false,
@@ -625,7 +625,7 @@
 	},
 	{
 		"name": "Strike Gundam",
-		"grade": "EG",
+		"grade": "Entry Grade",
 		"size": "1/144",
 		"release": "2021-05-19",
 		"pbandai": false,
@@ -639,7 +639,7 @@
 	},
 	{
 		"name": "Build Strike Exceed Galaxy",
-		"grade": "EG",
+		"grade": "Entry Grade",
 		"size": "1/144",
 		"release": "2021-11-03",
 		"pbandai": false,
@@ -653,7 +653,7 @@
 	},
 	{
 		"name": "RX-78-2 Gundam",
-		"grade": "EG",
+		"grade": "Entry Grade",
 		"size": "1/144",
 		"release": "2021-01-07",
 		"pbandai": false,
@@ -667,7 +667,7 @@
 	},
 	{
 		"name": "LAH Gundam",
-		"grade": "EG",
+		"grade": "Entry Grade",
 		"size": "1/144",
 		"release": "2022-01-17",
 		"pbandai": false,
@@ -681,7 +681,7 @@
 	},
 	{
 		"name": "MBF-02 Strike Rouge",
-		"grade": "EG",
+		"grade": "Entry Grade",
 		"size": "1/144",
 		"release": "2022-06-02",
 		"pbandai": false,
@@ -695,7 +695,7 @@
 	},
 	{
 		"name": "RX-78-2 Gundam (Full Weapon Set)",
-		"grade": "EG",
+		"grade": "Entry Grade",
 		"size": "1/144",
 		"release": "2022-01-15",
 		"pbandai": false,
@@ -709,8 +709,8 @@
 	},
 	{
 		"name": "MGSD Wing Gundam Zero EW",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2024-12-12",
 		"pbandai": false,
 		"price": 55.99,
@@ -723,8 +723,8 @@
 	},
 	{
 		"name": "MGSD Gundam Barbatos",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2024-01-19",
 		"pbandai": false,
 		"price": 52.99,
@@ -737,8 +737,8 @@
 	},
 	{
 		"name": "MGSD Freedom Gundam",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2023-06-02",
 		"pbandai": false,
 		"price": 52.99,
@@ -751,8 +751,8 @@
 	},
 	{
 		"name": "MSN-04 Sazabi",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2019-12-02",
 		"pbandai": false,
 		"price": 11.99,
@@ -765,8 +765,8 @@
 	},
 	{
 		"name": "Nu Gundam",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2019-11-01",
 		"pbandai": false,
 		"price": 10.99,
@@ -779,8 +779,8 @@
 	},
 	{
 		"name": "NZ-666 Kshatriya Gundam Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2019-12-10",
 		"pbandai": false,
 		"price": 14.99,
@@ -792,8 +792,8 @@
 	},
 	{
 		"name": "MS-06F Zaku Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2016-01-13",
 		"pbandai": false,
 		"price": 8.99,
@@ -804,8 +804,8 @@
 	},
 	{
 		"name": "Aile Strike Gundam",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2016-12-19",
 		"pbandai": false,
 		"price": 10.99,
@@ -818,8 +818,8 @@
 	},
 	{
 		"name": "Ma Chao Gundam Barbatos Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2018-11-06",
 		"pbandai": false,
 		"price": 10.99,
@@ -831,8 +831,8 @@
 	},
 	{
 		"name": "MSZ-006 Zeta Gundam Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2017-05-04",
 		"pbandai": false,
 		"price": 8.99,
@@ -843,8 +843,8 @@
 	},
 	{
 		"name": "God Gundam Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2017-01-11",
 		"pbandai": false,
 		"price": 12.99,
@@ -855,8 +855,8 @@
 	},
 	{
 		"name": "RX-0 Unicorn Gundam (Destroy Mode)",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2018-11-14",
 		"pbandai": false,
 		"price": 10.99,
@@ -868,8 +868,8 @@
 	},
 	{
 		"name": "RX-78GP03 Gundam GP03 Dendrobium Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2015-02-07",
 		"pbandai": false,
 		"price": 14.99,
@@ -880,8 +880,8 @@
 	},
 	{
 		"name": "RX-78-2 Gundam Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2015-05-11",
 		"pbandai": false,
 		"price": 8.99,
@@ -892,8 +892,8 @@
 	},
 	{
 		"name": "RX-93-V2 Hi-Nu Model Kit",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2018-11-08",
 		"pbandai": false,
 		"price": 16.99,
@@ -904,8 +904,8 @@
 	},
 	{
 		"name": "Arsene Gundam X",
-		"grade": "SD",
-		"size": "SD",
+		"grade": "Super Deformed",
+		"size": "Super Deformed",
 		"release": "2016-11-18",
 		"pbandai": false,
 		"price": 10.99,
@@ -918,7 +918,7 @@
 	},
 	{
 		"name": "Gundam GP04 Gerbera",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2018-02-14",
 		"pbandai": false,
@@ -932,7 +932,7 @@
 	},
 	{
 		"name": "Vigna-Ghina",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2018-11-02",
 		"pbandai": false,
@@ -946,7 +946,7 @@
 	},
 	{
 		"name": "MAS-005K Guncannon Detector",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2019-12-07",
 		"pbandai": false,
@@ -960,7 +960,7 @@
 	},
 	{
 		"name": "LM111E02 Gun-EZ",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2018-02-16",
 		"pbandai": false,
@@ -974,7 +974,7 @@
 	},
 	{
 		"name": "MSN-03 Jagd Doga",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2019-05-23",
 		"pbandai": false,
@@ -988,7 +988,7 @@
 	},
 	{
 		"name": "Bawoo ZZ Gundam",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2017-01-12",
 		"pbandai": false,
@@ -1002,7 +1002,7 @@
 	},
 	{
 		"name": "Efreet Kai",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2018-11-07",
 		"pbandai": false,
@@ -1015,7 +1015,7 @@
 	},
 	{
 		"name": "Gundam MK-III",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2019-12-18",
 		"pbandai": false,
@@ -1029,7 +1029,7 @@
 	},
 	{
 		"name": "ZAKU II KAI",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2020-11-01",
 		"pbandai": false,
@@ -1043,7 +1043,7 @@
 	},
 	{
 		"name": "XM-07B Vigna Ghina II",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2019-05-15",
 		"pbandai": false,
@@ -1057,7 +1057,7 @@
 	},
 	{
 		"name": "AMX-103 Hamma Hamma",
-		"grade": "RE",
+		"grade": "Reborn 100",
 		"size": "1/100",
 		"release": "2018-05-12",
 		"pbandai": false,
