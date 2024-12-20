@@ -1,6 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Item } from '../../shared/models/item';
 import { ProductCardComponent } from '../product-card/product-card.component';
+import { Router } from '@angular/router';
+import { EventService } from '../../shared/services/EventService';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'product-list',
@@ -11,4 +14,11 @@ import { ProductCardComponent } from '../product-card/product-card.component';
 })
 export class ProductListComponent{
   @Input() displayProducts: Item[] = [];
+
+  constructor(private router: Router, private eventService: EventService, private dataService: DataService){}
+
+  toDetailsPage(item:Item){
+    this.dataService.setSelectedProduct(item);
+    this.router.navigate(['details'])
+  }
 }

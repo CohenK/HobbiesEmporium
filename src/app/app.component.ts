@@ -4,12 +4,11 @@ import { Customer } from '../shared/models/customer';
 import { Order } from '../shared/models/order';
 import { Item } from '../shared/models/item';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, ProductListComponent],
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

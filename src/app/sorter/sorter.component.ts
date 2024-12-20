@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Item } from '../../shared/models/item';
 import { FormsModule } from '@angular/forms';
-import events from './../../shared/services/EventService'
+import { EventService } from '../../shared/services/EventService';
 
 @Component({
   selector: 'sorter',
@@ -37,8 +37,8 @@ export class SorterComponent {
       return item1Date < item2Date ? 1:-1;
     }
   ]
-  constructor(){
-    events.listen('resetSort', (value:any)=>{
+  constructor(private eventService: EventService){
+    eventService.listen('resetSort', (value:any)=>{
       this.sorterChanged(this.listSorter);
     })
   }
@@ -47,6 +47,6 @@ export class SorterComponent {
  
 
   sorterChanged(value: any){
-    events.emit('sort', this.sorters[value])
+    this.eventService.emit('sort', this.sorters[value])
   }
 }

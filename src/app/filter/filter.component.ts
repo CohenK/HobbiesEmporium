@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import events from './../../shared/services/EventService';
+import { EventService } from '../../shared/services/EventService';
 
 @Component({
   selector: 'filter',
@@ -39,6 +39,8 @@ export class FilterComponent {
     premiumFilters:[] as string[]
   };
 
+  constructor(private eventService: EventService){}
+
   //appends or removes filters based on user input and sends this list to shoppingPage to determine data output to product list
   toggleFilter(filter: any, filterType: any){
     filter.isActive = !filter.isActive;
@@ -48,6 +50,6 @@ export class FilterComponent {
       let index = filterType.indexOf(filter.filter);
       filterType.splice(index,1);
     }
-    events.emit('filterChanged', this.filters);
+    this.eventService.emit('filterChanged', this.filters);
   }
 }

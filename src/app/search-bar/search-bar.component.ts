@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import events from './../../shared/services/EventService';
+import { EventService } from '../../shared/services/EventService';
 
 @Component({
   selector: 'search-bar',
@@ -11,13 +11,14 @@ import events from './../../shared/services/EventService';
 })
 export class SearchBarComponent {
   searchText = '';
+  constructor(private eventService: EventService){}
   searchItem(){
-    events.emit('searchProduct', this.searchText);
-    events.emit('resetSort',0);
+    this.eventService.emit('searchProduct', this.searchText);
+    this.eventService.emit('resetSort',0);
   }
   clearSearch(){
     this.searchText = "";
-    events.emit('searchProduct', this.searchText)
-    events.emit('resetSort', 0);
+    this.eventService.emit('searchProduct', this.searchText)
+    this.eventService.emit('resetSort', 0);
   }
 }

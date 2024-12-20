@@ -5,7 +5,7 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { SorterComponent } from '../sorter/sorter.component';
 import { DataFetchService } from '../data-fetch.service';
 import { Item } from '../../shared/models/item';
-import events from './../../shared/services/EventService';
+import { EventService } from '../../shared/services/EventService';
 
 @Component({
   selector: 'shopping-page',
@@ -26,8 +26,8 @@ export class ShoppingPageComponent implements OnInit{
   //Updated when each corresponding event is called
   recentQueries = {searchTerm: "", sort:()=>{}, filters:{}}; 
 
-  constructor(private dataFetchService: DataFetchService){
-    events.listen('searchProduct',(searchTerm: any)=>{
+  constructor(private dataFetchService: DataFetchService, eventService: EventService){
+    eventService.listen('searchProduct',(searchTerm: any)=>{
       this.recentQueries.searchTerm = searchTerm; 
       if(searchTerm === " "){
         this.searchResult = this.products;
@@ -35,10 +35,10 @@ export class ShoppingPageComponent implements OnInit{
       else{
         this.searchResult = this.products.filter(item => item.name.toUpperCase().includes(searchTerm.toUpperCase()));
       }
-      events.emit('sort',this.recentQueries.sort)
+      eventService.emit('sort',this.recentQueries.sort)
     })
 
-    events.listen('sort',(value:any)=>{
+    eventService.listen('sort',(value:any)=>{
       this.recentQueries.sort = value;
       this.sortResult = [...this.searchResult];
       if(value===0){
@@ -46,10 +46,10 @@ export class ShoppingPageComponent implements OnInit{
       }else{
         this.sortResult.sort(value)
       }
-      events.emit('filterChanged',this.recentQueries.filters)
+      eventService.emit('filterChanged',this.recentQueries.filters)
     })
 
-    events.listen('filterChanged',(filters: any)=>{
+    eventService.listen('filterChanged',(filters: any)=>{
       this.recentQueries.filters = filters;
       let gradeTemp: Set<Item> = new Set();
       this.filteredResult = [...this.sortResult];
