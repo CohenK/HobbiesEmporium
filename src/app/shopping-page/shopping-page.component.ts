@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ProductListComponent } from '../product-list/product-list.component';
-import { FilterComponent } from '../filter/filter.component';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { SorterComponent } from '../sorter/sorter.component';
 import { DataFetchService } from '../data-fetch.service';
 import { Item } from '../../shared/models/item';
 import { EventService } from '../../shared/services/EventService';
+import { FilterComponent } from '../filter/filter.component';
+import { SearchBarComponent } from '../search-bar/search-bar.component';
 
 @Component({
   selector: 'shopping-page',
