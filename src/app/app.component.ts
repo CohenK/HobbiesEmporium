@@ -4,6 +4,13 @@ import { Customer } from '../shared/models/customer';
 import { Order } from '../shared/models/order';
 import { Item } from '../shared/models/item';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EventService } from '../shared/services/EventService';
+import { max } from 'rxjs';
+
+interface cartItem{
+  item: Item,
+  amount: number
+}
 
 @Component({
   selector: 'app-root',
@@ -14,6 +21,21 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class AppComponent {
   title = 'HobbiesEmporium';
+  cart: Map<Item, number> = new Map<Item, number>();
+
+  constructor(private eventService: EventService){
+    eventService.listen("addToCart",(data: cartItem)=>{
+      if(this.cart.has(data.item)){
+        let currentAmt: number = this.cart.get(data.item) as number;
+        this.cart.set(data.item,Math.min(3,currentAmt+data.amount))
+      }else{
+        this.cart.set(data.item,data.amount);
+      }
+      console.log(this.cart);
+    })
+  }
+
+
   // customers = [
   //   new Customer('Cohen'),
   //   new Customer('Marianne',[
@@ -26,4 +48,5 @@ export class AppComponent {
   //   )
   //   ])
   // ]
+
 }

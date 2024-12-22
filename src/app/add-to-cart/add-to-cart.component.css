@@ -1,0 +1,9 @@
+.pagination{
+    min-height: 100%;
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
+.btn{
+    min-width: 30%;
+}

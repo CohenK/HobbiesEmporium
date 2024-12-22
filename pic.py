@@ -8,9 +8,6 @@ print(path)
 with open(path, 'r') as file:
     data = json.load(file)
     for d in data:
-        d['thumbnail'] = d['name'] + ".webp"
-        d['model'] = []
-        for i in range(1,4):
-            d['model'].append(d['name']+f"{i}.webp")
+        d['model'] = [d['thumbnail']] + d['model']
     with open(path,'w') as out_file:
         json.dump(data,out_file, indent='\t')
