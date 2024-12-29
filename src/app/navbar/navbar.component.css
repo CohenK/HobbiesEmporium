@@ -1,18 +1,18 @@
 .spacer {
-flex: 1;
+    flex: 1;
 }
 
 .toolbar {
-position: sticky;
-top: 0;
-left: 0;
-right: 0;
-height: 60px;
-display: flex;
-align-items: center;
-background-color: #1976d2;
-color: white;
-font-weight: 600;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
 }
 
 nav{
@@ -23,17 +23,40 @@ img {
     max-height: 60px;
     margin: 0 16px;
 }
+.cart-button{
+    position: relative;
+    padding: 0;
+    padding: 5px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
+.cartNumber{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 50%;
+    background-color: #fb2f38;
+}
+
+#cart{
+    height: 40px;
+    margin: 0;
+}
 #twitter-logo {
-height: 40px;
-margin: 0 8px;
+    height: 40px;
+    margin: 0 8px;
 }
 #youtube-logo {
-height: 40px;
-margin: 0 16px;
+    height: 40px;
+    margin: 0 16px;
 }
 
 #twitter-logo:hover,
 #youtube-logo:hover {
-opacity: 0.8;
+    opacity: 0.8;
 }
