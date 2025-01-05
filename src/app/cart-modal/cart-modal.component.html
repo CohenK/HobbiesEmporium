@@ -1,0 +1,28 @@
+<div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Your Shopping Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        @if (this.cart.getAmt() > 0) {
+          @for (item of this.cart.getItems(); track $index) {
+            <cart-item [cartItem]="item"></cart-item>
+          }
+        }@else{
+          <div>No items in your cart yet.</div>
+        }
+        <hr>
+        <div class="row justify-content-between">
+          <div class="col-sm-9 col-md-9 col-lg-9">Subtotal:</div>
+          <div class="col-sm-3 col-md-3 col-lg-3">{{this.cart.getSubTotal() | currency:'USD':true:'1.2-2'}}</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
