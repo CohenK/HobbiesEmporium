@@ -62,6 +62,9 @@
             @if (paymentForm.get('cardNumber')?.hasError('required')) {
                 <small class="text-danger">This field is required</small>
             }
+            @if (paymentForm.get('cardNumber')?.hasError('invalidCardNumber')) {
+                <small class="text-danger">Please enter a valid Card Number</small>
+            }
         }
     </div>
     <div class="row">
@@ -101,6 +104,9 @@
             @if (paymentForm.get('expirationYear')?.invalid && (paymentForm.get('expirationYear')?.dirty || paymentForm.get('expirationYear')?.touched)){
                 @if (paymentForm.get('expirationYear')?.hasError('required')) {
                     <small class="text-danger">This field is required</small>
+                }
+                @if (paymentForm.get('expirationYear')?.hasError('invalidExpirationYear')) {
+                    <small class="text-danger">Please enter a valid expiration year</small>
                 }
             }
         </div>
@@ -173,14 +179,11 @@
                     <small class="text-danger">This field is required</small>
                 }
                 @if (paymentForm.get('zipcode')?.hasError('invalidZipCode')) {
-                    <small class="text-danger">Please enter a valid CVC number</small>
+                    <small class="text-danger">Please enter a valid zipcode</small>
                 }
             }
         </div>
     </div>
-    
-
-    
     <div class="mb-2">
         <button 
             type="submit"

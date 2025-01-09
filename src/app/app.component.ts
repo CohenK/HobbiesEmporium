@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { EventService } from '../shared/services/EventService';
 import { Cart } from '../shared/models/cart';
 import { CartModalComponent } from './cart-modal/cart-modal.component';
+import { ThankyouModalComponent } from './thankyou-modal/thankyou-modal.component';
 
 interface cartItem{
   item: Item,
@@ -23,7 +24,7 @@ interface value{
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CartModalComponent],
+  imports: [RouterOutlet, NavbarComponent, CartModalComponent, ThankyouModalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

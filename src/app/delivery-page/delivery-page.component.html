@@ -1,0 +1,134 @@
+<form 
+    class="container pt-3"
+    [formGroup]="deliveryForm"
+    (ngSubmit)="$event.preventDefault(); submitForm()">
+    <h2 class="mb-3">Delivery Info</h2>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">First Name</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="firstName"
+                [(ngModel)]="this.deliveryInfo.fname"
+            >
+            @if (deliveryForm.get('firstName')?.invalid && (deliveryForm.get('firstName')?.dirty || deliveryForm.get('firstName')?.touched)){
+                @if (deliveryForm.get('firstName')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+            }
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">Last Name</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="lastName"
+                [(ngModel)]="this.deliveryInfo.lname"
+            >
+            @if (deliveryForm.get('lastName')?.invalid && (deliveryForm.get('lastName')?.dirty || deliveryForm.get('lastName')?.touched)){
+                @if (deliveryForm.get('lastName')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">Phone Number</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="phone"
+                [(ngModel)]="this.deliveryInfo.phone"
+            >
+            @if (deliveryForm.get('phone')?.invalid && (deliveryForm.get('phone')?.dirty || deliveryForm.get('phone')?.touched)){
+                @if (deliveryForm.get('phone')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+                @if (deliveryForm.get('phone')?.hasError('invalidPhoneNumber')) {
+                    <small class="text-danger">Please enter a valid phone number</small>
+                }
+            }
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">Email Address</label>
+            <input 
+                type="email" 
+                class="form-control"
+                formControlName="email"
+                [(ngModel)]="this.deliveryInfo.email"
+            >
+            @if (deliveryForm.get('email')?.invalid && (deliveryForm.get('email')?.dirty || deliveryForm.get('email')?.touched)){
+                @if (deliveryForm.get('email')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+                @if (deliveryForm.get('email')?.hasError('email')) {
+                    <small class="text-danger">Please enter a valid email address</small>
+                }
+            }
+        </div>
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Delivery Address</label>
+        <input 
+            type="text" 
+            class="form-control"
+            formControlName="billingAddress"
+            [(ngModel)]="this.deliveryInfo.address"
+        >
+        @if (deliveryForm.get('billingAddress')?.invalid && (deliveryForm.get('billingAddress')?.dirty || deliveryForm.get('billingAddress')?.touched)){
+            @if (deliveryForm.get('billingAddress')?.hasError('required')) {
+                <small class="text-danger">This field is required</small>
+            }
+            @if (deliveryForm.get('billingAddress')?.hasError('invalidAddress')) {
+                <small class="text-danger">Please enter a valid address</small>
+            }
+        }
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">City</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="city"
+                [(ngModel)]="this.deliveryInfo.city"
+            >
+            @if (deliveryForm.get('city')?.invalid && (deliveryForm.get('city')?.dirty || deliveryForm.get('city')?.touched)){
+                @if (deliveryForm.get('city')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+                @if (deliveryForm.get('city')?.hasError('invalidAddress')) {
+                    <small class="text-danger">Please enter a valid city</small>
+                }
+            }
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">Zip Code</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="zipcode"
+                [(ngModel)]="this.deliveryInfo.zipcode"
+            >
+            @if (deliveryForm.get('zipcode')?.invalid && (deliveryForm.get('zipcode')?.dirty || deliveryForm.get('zipcode')?.touched)){
+                @if (deliveryForm.get('zipcode')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+                @if (deliveryForm.get('zipcode')?.hasError('invalidZipCode')) {
+                    <small class="text-danger">Please enter a valid CVC number</small>
+                }
+            }
+        </div>
+    </div>
+    <div class="mb-2">
+        <button 
+            type="submit"
+            class="btn btn-primary"
+            [disabled] = "deliveryForm.invalid"
+            data-bs-toggle="modal"
+            data-bs-target="#thankyouModal"
+        >Finalize</button>
+    </div>
+</form>

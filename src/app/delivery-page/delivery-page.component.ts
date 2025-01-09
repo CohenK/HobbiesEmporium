@@ -2,21 +2,21 @@ import { Component } from '@angular/core';
 import { Cart } from '../../shared/models/cart';
 import { CartService } from '../cart.service';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Billing } from '../../shared/models/billing';
-import { invalidCardNumber, invalidCVC, invalidZipCode, invalidAddress, invalidExpirationYear } from '../validators';
+import { Delivery } from '../../shared/models/delivery';
+import { invalidZipCode, invalidAddress, invalidPhoneNumber } from '../validators';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'checkout-page',
+  selector: 'delivery-page',
   standalone: true,
   imports: [ReactiveFormsModule, FormsModule],
-  templateUrl: './checkout-page.component.html',
-  styleUrl: './checkout-page.component.css'
+  templateUrl: './delivery-page.component.html',
+  styleUrl: './delivery-page.component.css'
 })
 
-export class CheckoutPageComponent {
+export class DeliveryPageComponent {
   cart!: Cart;
-  billingInfo: Billing =  new Billing("","","","","","","","","","");
+  deliveryInfo: Delivery =  new Delivery("","","","","","");
   constructor(private cartService: CartService, private router: Router){}
 
   ngOnInit(): void {
@@ -25,19 +25,16 @@ export class CheckoutPageComponent {
     });
   }
 
-  paymentForm = new FormGroup({
+  deliveryForm = new FormGroup({
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    cardNumber: new FormControl('', [Validators.required, invalidCardNumber]),
-    expirationMonth: new FormControl('', Validators.required),
-    expirationYear: new FormControl('', [Validators.required, invalidExpirationYear]),
-    cvc: new FormControl('', [Validators.required, invalidCVC]),
+    phone: new FormControl('', [Validators.required, invalidPhoneNumber]),
+    email: new FormControl('', Validators.email),
     billingAddress: new FormControl('', [Validators.required, invalidAddress]),
     city: new FormControl('', [Validators.required, invalidAddress]),
     zipcode: new FormControl('', [Validators.required, invalidZipCode])
   })
   submitForm(){
-    this.router.navigate(['delivery'])
+    this.router.navigate([''])
   }
 }

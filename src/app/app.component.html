@@ -1,5 +1,6 @@
 <div class="main">
   <cart-modal [cart]="this.cart"></cart-modal>
+  <thankyou-modal></thankyou-modal>
   <navbar class="sticky-top" [items]="this.cart.getAmt()"></navbar>
   <router-outlet></router-outlet>
 </div>
