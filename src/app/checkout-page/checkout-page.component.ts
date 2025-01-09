@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 
 export class CheckoutPageComponent {
   cart!: Cart;
-  billingInfo: Billing =  new Billing("","","","","","","","","","");
+  billingInfo: Billing =  new Billing();
   constructor(private cartService: CartService, private router: Router){}
 
   ngOnInit(): void {

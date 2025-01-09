@@ -30,7 +30,7 @@ interface value{
 })
 export class AppComponent {
   title = 'HobbiesEmporium';
-  cart = new Cart(new Map<string, value>(),0,0)
+  cart = new Cart();
 
   constructor(eventService: EventService){
     eventService.listen("addToCart",(data: cartItem)=>{

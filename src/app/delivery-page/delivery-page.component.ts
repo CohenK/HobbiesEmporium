@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 
 export class DeliveryPageComponent {
   cart!: Cart;
-  deliveryInfo: Delivery =  new Delivery("","","","","","");
+  deliveryInfo: Delivery =  new Delivery();
   constructor(private cartService: CartService, private router: Router){}
 
   ngOnInit(): void {

@@ -13,7 +13,7 @@ interface value{
 }
 
 export class Cart{
-    constructor(private cartItems: Map<string, value>, private amount: number, private subTotal: number){}
+    constructor(private cartItems: Map<string, value> = new  Map<string, value>, private amount: number = 0, private subTotal: number = 0){}
 
     addItem(data: cartItem): void{
       let key = JSON.stringify(data.item);
