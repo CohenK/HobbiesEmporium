@@ -1,0 +1,191 @@
+<form 
+    class="container pt-3"
+    [formGroup]="paymentForm"
+    (ngSubmit)="$event.preventDefault(); submitForm()">
+    <h2 class="mb-3">Payment Info</h2>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">First Name</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="firstName"
+                [(ngModel)]="this.billingInfo.fname"
+            >
+            @if (paymentForm.get('firstName')?.invalid && (paymentForm.get('firstName')?.dirty || paymentForm.get('firstName')?.touched)){
+                @if (paymentForm.get('firstName')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+            }
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">Last Name</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="lastName"
+                [(ngModel)]="this.billingInfo.lname"
+            >
+            @if (paymentForm.get('lastName')?.invalid && (paymentForm.get('lastName')?.dirty || paymentForm.get('lastName')?.touched)){
+                @if (paymentForm.get('lastName')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+            }
+        </div>
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Email Address</label>
+        <input 
+            type="email" 
+            class="form-control"
+            formControlName="email"
+            [(ngModel)]="this.billingInfo.email"
+        >
+        @if (paymentForm.get('email')?.invalid && (paymentForm.get('email')?.dirty || paymentForm.get('email')?.touched)){
+            @if (paymentForm.get('email')?.hasError('required')) {
+                <small class="text-danger">This field is required</small>
+            }
+            @if (paymentForm.get('email')?.hasError('email')) {
+                <small class="text-danger">Please enter a valid email address</small>
+            }
+        }
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Card Number</label>
+        <input 
+            type="text" 
+            class="form-control"
+            formControlName="cardNumber"
+            [(ngModel)]="this.billingInfo.card"
+        >
+        @if (paymentForm.get('cardNumber')?.invalid && (paymentForm.get('cardNumber')?.dirty || paymentForm.get('cardNumber')?.touched)){
+            @if (paymentForm.get('cardNumber')?.hasError('required')) {
+                <small class="text-danger">This field is required</small>
+            }
+        }
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 mb-2">
+            <label class="form-label">Expiration Month</label>
+            <select class="form-select"
+                formControlName="expirationMonth"
+                [(ngModel)]="this.billingInfo.expirationMonth">
+                <option value="">-</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            @if (paymentForm.get('expirationMonth')?.invalid && (paymentForm.get('expirationMonth')?.dirty || paymentForm.get('expirationMonth')?.touched)){
+                @if (paymentForm.get('expirationMonth')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+            }
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 mb-2">
+            <label class="form-label">Expiration Year</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="expirationYear"
+                [(ngModel)]="this.billingInfo.expirationYear"
+            >
+            @if (paymentForm.get('expirationYear')?.invalid && (paymentForm.get('expirationYear')?.dirty || paymentForm.get('expirationYear')?.touched)){
+                @if (paymentForm.get('expirationYear')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+            }
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 mb-2">
+            <div class="row">
+                <label class="form-label">CVC</label>
+                <input 
+                    type="text" 
+                    class="form-control"
+                    formControlName="cvc"
+                    [(ngModel)]="this.billingInfo.cvc"
+                >
+                @if (paymentForm.get('cvc')?.invalid && (paymentForm.get('cvc')?.dirty || paymentForm.get('cvc')?.touched)){
+                    @if (paymentForm.get('cvc')?.hasError('required')) {
+                        <small class="text-danger">This field is required</small>
+                    }
+                    @if (paymentForm.get('cvc')?.hasError('invalidCVC')) {
+                        <small class="text-danger">Please enter a valid CVC number</small>
+                    }
+                }
+            </div>
+            
+        </div>
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Billing Address</label>
+        <input 
+            type="text" 
+            class="form-control"
+            formControlName="billingAddress"
+            [(ngModel)]="this.billingInfo.address"
+        >
+        @if (paymentForm.get('billingAddress')?.invalid && (paymentForm.get('billingAddress')?.dirty || paymentForm.get('billingAddress')?.touched)){
+            @if (paymentForm.get('billingAddress')?.hasError('required')) {
+                <small class="text-danger">This field is required</small>
+            }
+            @if (paymentForm.get('billingAddress')?.hasError('invalidAddress')) {
+                <small class="text-danger">Please enter a valid address</small>
+            }
+        }
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">City</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="city"
+                [(ngModel)]="this.billingInfo.city"
+            >
+            @if (paymentForm.get('city')?.invalid && (paymentForm.get('city')?.dirty || paymentForm.get('city')?.touched)){
+                @if (paymentForm.get('city')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+                @if (paymentForm.get('city')?.hasError('invalidAddress')) {
+                    <small class="text-danger">Please enter a valid city</small>
+                }
+            }
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-2">
+            <label class="form-label">Zip Code</label>
+            <input 
+                type="text" 
+                class="form-control"
+                formControlName="zipcode"
+                [(ngModel)]="this.billingInfo.zipcode"
+            >
+            @if (paymentForm.get('zipcode')?.invalid && (paymentForm.get('zipcode')?.dirty || paymentForm.get('zipcode')?.touched)){
+                @if (paymentForm.get('zipcode')?.hasError('required')) {
+                    <small class="text-danger">This field is required</small>
+                }
+                @if (paymentForm.get('zipcode')?.hasError('invalidZipCode')) {
+                    <small class="text-danger">Please enter a valid CVC number</small>
+                }
+            }
+        </div>
+    </div>
+    
+
+    
+    <div class="mb-2">
+        <button 
+            type="submit"
+            class="btn btn-primary"
+            [disabled] = "paymentForm.invalid"
+        >Pay</button>
+    </div>
+</form>

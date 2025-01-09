@@ -1,8 +1,9 @@
 import { Component, Input} from '@angular/core';
 import { Cart } from '../../shared/models/cart';
 import { CartItemComponent } from '../cart-item/cart-item.component';
-import { Item } from '../../shared/models/item';
 import { CurrencyPipe } from '@angular/common';
+import { Router } from '@angular/router';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'cart-modal',
@@ -13,4 +14,15 @@ import { CurrencyPipe } from '@angular/common';
 })
 export class CartModalComponent{
   @Input() cart!: Cart;
+
+  constructor(private router: Router, private cartService: CartService){}
+
+  toCheckout(){
+    if(this.cart.getAmt()===0){
+      alert("There are no items in your cart to checkout.");
+    }else{
+      this.cartService.setCurrentCart(this.cart);
+      this.router.navigate(['checkout'])
+    }
+  }
 }
