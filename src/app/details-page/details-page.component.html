@@ -1,12 +1,20 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-5">
-            <model-carousel [modelImgs]="item.model"></model-carousel>
-        </div>
-        <div class="d-flex flex-column col-sm-8 col-md-8 col-lg-7">
-            <detail-info [item]="item"></detail-info>
-            <h4 class="text-danger italic mb-4">*Up to 3 per customer*</h4>
-            <add-to-cart (amount)="addToCart($event)"></add-to-cart>
-        </div>
+        @if (this.loading) {
+            <h1 class="col-sm-12 col-md-12 col-lg-12">Loading...</h1>
+        }@else {
+            @if (this.item) {
+                <div class="col-sm-4 col-md-4 col-lg-5">
+                    <model-carousel [modelImgs]="item.model"></model-carousel>
+                </div>
+                <div class="d-flex flex-column col-sm-8 col-md-8 col-lg-7">
+                    <detail-info [item]="item"></detail-info>
+                    <h4 class="text-danger italic mb-4">*Up to 3 per customer*</h4>
+                    <add-to-cart (amount)="addToCart($event)"></add-to-cart>
+                </div>
+            }@else {
+                <h1 class="col-sm-12 col-md-12 col-lg-12">There was an error fetching the item information.</h1>
+            }
+        }
     </div>
 </div>

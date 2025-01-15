@@ -1,26 +1,30 @@
 <div class="container-fluid m-0">
-    <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-2"></div>
-        <div class="col-sm-9 col-md-9 col-lg-10 mt-4">
-            <div class="row search-sort d-flex">
-                <div class="col-sm-9 col-md-9 col-lg-9 mt-0">
-                    <search-bar></search-bar>
+    @if (this.loading) {
+        <h1>Loading...</h1>
+    }@else {
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-2"></div>
+            <div class="col-sm-9 col-md-9 col-lg-10 mt-4">
+                <div class="row search-sort d-flex">
+                    <div class="col-sm-9 col-md-9 col-lg-9 mt-0">
+                        <search-bar></search-bar>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 mt-0">
+                        <sorter></sorter>
+                    </div>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 mt-0">
-                    <sorter></sorter>
-                </div>
-            </div>
-        </div> 
-    </div>
-    
-    <div class="row content">
-        <div class="col-sm-3 col-md-3 col-lg-2">
-            <filter></filter>
+            </div> 
         </div>
-        <div class="col-sm-9 col-md-9 col-lg-10 mt-0"> 
-            <product-list class="col-lg-12"
-                [displayProducts]="displayedItems">
-            </product-list>
-        </div> 
-    </div>
+        
+        <div class="row content">
+            <div class="col-sm-3 col-md-3 col-lg-2">
+                <filter></filter>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-10 mt-0"> 
+                <product-list class="col-lg-12"
+                    [displayProducts]="displayedItems">
+                </product-list>
+            </div> 
+        </div>
+    }
 </div>

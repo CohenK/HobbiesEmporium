@@ -7,7 +7,7 @@ import { DeliveryPageComponent } from './delivery-page/delivery-page.component';
 
 export const routes: Routes = [
     {path:'', component: ShoppingPageComponent},
-    {path:'details', component: DetailsPageComponent},
+    {path:'details/:productID', component: DetailsPageComponent},
     {path:'checkout', component: CheckoutPageComponent},
     {path:'delivery', component: DeliveryPageComponent},
     {path: '**', component: NotFoundComponent}

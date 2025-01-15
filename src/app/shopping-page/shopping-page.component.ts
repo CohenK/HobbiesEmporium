@@ -1,11 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductListComponent } from '../product-list/product-list.component';
 import { SorterComponent } from '../sorter/sorter.component';
-import { DataFetchService } from '../data-fetch.service';
 import { Item } from '../../shared/models/item';
 import { EventService } from '../../shared/services/EventService';
 import { FilterComponent } from '../filter/filter.component';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { collection, getDocs } from "firebase/firestore";
+import { db } from '../firebase';
 
 @Component({
   selector: 'shopping-page',
@@ -20,13 +21,14 @@ export class ShoppingPageComponent implements OnInit{
   sortResult: Item[] = [];
   filteredResult: Item[] = [];
   displayedItems: Item[] = [];
+  loading: boolean = true;
 
   //Most recent history of user search for sequential processing of items: search > sort > filter
   //Makes item results robust so one phase of the item manipulation doesn't forget the needs of the other phases
   //Updated when each corresponding event is called
   recentQueries = {searchTerm: "", sort:()=>{}, filters:{}}; 
 
-  constructor(private dataFetchService: DataFetchService, eventService: EventService){
+  constructor(eventService: EventService){
     eventService.listen('searchProduct',(searchTerm: any)=>{
       this.recentQueries.searchTerm = searchTerm; 
       if(searchTerm === " "){
@@ -98,11 +100,31 @@ export class ShoppingPageComponent implements OnInit{
     })
   }
   ngOnInit(): void {
-    this.dataFetchService.getItems().subscribe((data: any)=>{
-      this.products = data;
+    const getData = async () => {
+      const querySnapshot = await getDocs(collection(db, "products"));
+      this.products = querySnapshot.docs.map((doc) => {
+        const data = doc.data() as Item;
+        return {
+          id: data.id,
+          name: data.name,
+          grade: data.grade,
+          size: data.size,
+          release: data.release,
+          pbandai: data.pbandai,
+          price: data.price, 
+          thumbnail: data.thumbnail, 
+          model: data.model
+        };
+      });
+    };
+    getData().then(()=>{
       this.searchResult = [...this.products];
       this.sortResult = [...this.products];
       this.displayedItems = [...this.products];
+    }).catch((error)=>{
+      console.error("Error fetching our products: ", error);
+    }).finally(()=>{
+      this.loading = false;
     });
-  }
+  };
 }
