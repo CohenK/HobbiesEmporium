@@ -5,6 +5,8 @@ import { db } from '../firebase';
 import { orderInfo, userInfo } from '../../shared/interfaces';
 import { LoggedService } from '../../shared/services/LoggedService';
 import { CommonModule } from '@angular/common';
+import { EventService } from '../../shared/services/EventService';
+import { AuthService } from '../../shared/services/AuthService';
 
 @Component({
   selector: 'user-page',
@@ -20,7 +22,13 @@ export class UserPageComponent implements OnInit{
   userInfo!: userInfo;
   orders: orderInfo[] = [];
 
-  constructor(private route: ActivatedRoute, private loggedService: LoggedService){}
+  constructor(private route: ActivatedRoute, private loggedService: LoggedService, private eventService: EventService, private authService: AuthService){}
+
+  userLogout(){
+    if(this.authService.logout()){
+      this.eventService.emit("userLogout",{});
+    };
+  }
 
   async ngOnInit(){
     this.loggedService.state.subscribe((current)=>{

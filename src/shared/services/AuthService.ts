@@ -23,7 +23,6 @@ export class AuthService {
       throw new Error('User information not found in Firestore');
     }
   }
-  
 
   async register(email: string, password: string) {
     try{
@@ -43,4 +42,14 @@ export class AuthService {
     }
     return null;
   };
+
+  logout(): boolean{
+    this.auth.signOut().then(()=>{
+      alert("You have signed out.");
+    }).catch((error)=>{
+      console.error(`Error signing out: ${error}`);
+      return false;
+    });
+    return true;
+  }
 }

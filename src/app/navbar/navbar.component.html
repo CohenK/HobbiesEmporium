@@ -20,7 +20,7 @@
       <div class="profileTag">Profile</div>
     </a>
   }@else {
-    <a class="profileLink" href="#" (click)="$event.preventDefault();" data-bs-toggle="modal" data-bs-target="#loginModal">
+    <a class="profileLink" href="#" (click)="$event.preventDefault(); toLoginPage();">
       <img
         height="30"
         class="profileLogo m-0"

@@ -1,24 +1,24 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { invalidPassword } from '../validators';
 import { AuthService } from '../../shared/services/AuthService';
+import { EventService } from '../../shared/services/EventService';
 
 
 @Component({
-  selector: 'login-modal',
+  selector: 'login-page',
   standalone: true,
   imports: [FormsModule, ReactiveFormsModule],
-  templateUrl: './login-modal.component.html',
-  styleUrl: './login-modal.component.css'
+  templateUrl: './login-page.component.html',
+  styleUrl: './login-page.component.css'
 })
-export class LoginModalComponent {
-  @Output() userID = new EventEmitter<any>();
+export class LoginPageComponent {
   loginEmail: string = "";
   loginPassword: string = "";
   newEmail: string = "";
   newPassword: string = "";
 
-  constructor(private auth: AuthService){}
+  constructor(private auth: AuthService, private eventService: EventService){}
 
   loginForm = new FormGroup({
     loginEmail: new FormControl('', [Validators.required, Validators.email]),
@@ -31,10 +31,10 @@ export class LoginModalComponent {
   });
 
   login(){
+    console.log('logging in')
     this.auth.login(this.loginEmail,this.loginPassword).then((id:string)=>{
-      this.userID.emit(id);
-    })
-    
+      this.eventService.emit('userLogin',id);
+    });
   }
 
   register(){

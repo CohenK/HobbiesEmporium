@@ -5,7 +5,6 @@ import { EventService } from '../shared/services/EventService';
 import { Cart } from '../shared/models/cart';
 import { CartModalComponent } from './cart-modal/cart-modal.component';
 import { ThankyouModalComponent } from './thankyou-modal/thankyou-modal.component';
-import { LoginModalComponent } from './login-modal/login-modal.component';
 import { cartItem, value } from '../shared/interfaces';
 import { Billing } from '../shared/models/billing';
 import { Delivery } from '../shared/models/delivery';
@@ -17,7 +16,7 @@ import { SessionService } from '../shared/services/SessionService';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CartModalComponent, ThankyouModalComponent, LoginModalComponent],
+  imports: [RouterOutlet, NavbarComponent, CartModalComponent, ThankyouModalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -118,6 +117,18 @@ export class AppComponent implements OnInit{
       this.sessionService.removeData('userCartInfo');
       if(this.loggedIn) this.updateFirestoreUserCart();
     });
+
+  eventService.listen("userLogout",(data: any)=>{
+    this.loggedIn = false;
+    this.loggedService.setLoggedState(false);
+    this.sessionService.removeData('userID');
+    this.cart = new Cart();
+  });
+
+  eventService.listen("userLogin",(data: string)=>{
+    this.userLogin(data);
+  });
+
   }
   sessionLogin(event: any){
     this.loggedService.setLoggedState(true);

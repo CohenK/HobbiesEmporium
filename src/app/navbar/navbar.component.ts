@@ -18,6 +18,10 @@ export class NavbarComponent {
     this.router.navigate([''])
   }
 
+  toLoginPage(){
+    this.router.navigate(['login'])
+  }
+
   profile(){
     this.router.navigate(['user/',this.userID])
   }
