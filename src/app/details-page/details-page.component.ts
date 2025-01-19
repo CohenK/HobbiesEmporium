@@ -17,7 +17,7 @@ import { db } from '../firebase';
 })
 export class DetailsPageComponent implements OnInit{
   loading: boolean = true;
-  productId!: number;
+  productId!: string;
   item!: Item;
   constructor(private eventService: EventService, private route: ActivatedRoute){}
 
@@ -27,13 +27,12 @@ export class DetailsPageComponent implements OnInit{
 
   async ngOnInit(){
     this.route.paramMap.subscribe(params => {
-      this.productId = Number(params.get('productID'));
+      this.productId = params.get('productID') as string;
     });
 
     try{  
-      const docRef = doc(db, "products", this.productId.toString());
+      const docRef = doc(db, "products", this.productId);
       const docSnap = await getDoc(docRef);
-      console.log(docSnap.data());
       if (docSnap.exists()){
         this.item = docSnap.data() as Item;
       }else{
@@ -43,7 +42,7 @@ export class DetailsPageComponent implements OnInit{
       console.error('Error fetching document:', error);
     } finally {
       this.loading = false;
-    }
+    };
     
   };
 

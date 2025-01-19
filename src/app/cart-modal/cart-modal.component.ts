@@ -14,12 +14,15 @@ import { CartService } from '../cart.service';
 })
 export class CartModalComponent{
   @Input() cart!: Cart;
+  @Input() logged!: boolean;
 
   constructor(private router: Router, private cartService: CartService){}
 
   toCheckout(){
     if(this.cart.getAmt()===0){
       alert("There are no items in your cart to checkout.");
+    }else if(!this.logged){
+      alert("Please sign in or create an account to proceed.");
     }else{
       this.cartService.setCurrentCart(this.cart);
       this.router.navigate(['checkout'])

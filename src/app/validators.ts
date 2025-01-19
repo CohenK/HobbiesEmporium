@@ -59,3 +59,21 @@ export function invalidAddress(control: AbstractControl) : ValidationErrors | nu
         return { invalidAddress : true };
     }
 }
+
+export function invalidUsername(control: AbstractControl) : ValidationErrors | null {
+    const chars: string = control.value;
+    if(chars.length >= 5 || chars.length === 0){
+        return null;
+    }else{
+        return { invalidUsername : true };
+    }
+}
+
+export function invalidPassword(control: AbstractControl) : ValidationErrors | null {
+    const chars: string = control.value;
+    if(chars.length >= 8 || chars.length === 0){
+        return null;
+    }else{
+        return { invalidPassword : true };
+    }
+}

@@ -1,6 +1,8 @@
 <div class="container-fluid m-0">
     @if (this.loading) {
-        <h1>Loading...</h1>
+        <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+            <h4 class="mt-3">Loading...</h4>
+        </div>
     }@else {
         <div class="row">
             <div class="col-sm-3 col-md-3 col-lg-2"></div>
@@ -21,7 +23,7 @@
                 <filter></filter>
             </div>
             <div class="col-sm-9 col-md-9 col-lg-10 mt-0"> 
-                <product-list class="col-lg-12"
+                <product-list
                     [displayProducts]="displayedItems">
                 </product-list>
             </div> 

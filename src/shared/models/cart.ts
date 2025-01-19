@@ -1,16 +1,4 @@
-import { Item } from "./item";
-
-interface cartItem{
-  item: Item,
-  amount: number
-}
-
-interface value{
-  grade: string,
-  name: string,
-  price: number,
-  amount: number
-}
+import { cartItem, value } from "../interfaces";
 
 export class Cart{
     constructor(private cartItems: Map<string, value> = new  Map<string, value>, private amount: number = 0, private subTotal: number = 0){}
@@ -35,7 +23,6 @@ export class Cart{
         this.amount = this.amount + data.amount;
         this.subTotal += model.price * data.amount;
       }
-      console.log(this.cartItems);
     }
 
     removeItem(data: string): boolean{
@@ -70,6 +57,23 @@ export class Cart{
         this.removeItem(data);
         this.subTotal -= currentValue?.price!;
       }
+    }
+
+    clearCart(){
+      this.cartItems = new  Map<string, value>;
+      this.amount = 0;
+      this.subTotal = 0;
+    }
+
+    serialize(){
+      const serializedCart = JSON.stringify(this, (k, v) => {
+        if (v instanceof Map) {
+          // Convert Map to an array of key-value pairs
+          return { __isMap: true, data: Array.from(v.entries()) };
+        }
+        return v;
+      });
+      return serializedCart;
     }
 
     getItems(){ return this.cartItems }

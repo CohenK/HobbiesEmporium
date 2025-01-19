@@ -10,9 +10,15 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
   @Input() items: number = 0;
+  @Input() logged!: boolean;
+  @Input() userID!: string;
 
   constructor(private router: Router){}
   toHomepage(){
     this.router.navigate([''])
+  }
+
+  profile(){
+    this.router.navigate(['user/',this.userID])
   }
 }

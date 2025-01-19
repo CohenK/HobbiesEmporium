@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Cart } from '../../shared/models/cart';
 import { CartService } from '../cart.service';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Delivery } from '../../shared/models/delivery';
 import { invalidZipCode, invalidAddress, invalidPhoneNumber } from '../validators';
 import { Router } from '@angular/router';
+import { EventService } from '../../shared/services/EventService';
 
 @Component({
   selector: 'delivery-page',
@@ -14,15 +15,12 @@ import { Router } from '@angular/router';
   styleUrl: './delivery-page.component.css'
 })
 
-export class DeliveryPageComponent {
+export class DeliveryPageComponent implements OnInit{
   cart!: Cart;
   deliveryInfo: Delivery =  new Delivery();
-  constructor(private cartService: CartService, private router: Router){}
+  constructor(private eventService: EventService, private router: Router){}
 
   ngOnInit(): void {
-    this.cartService.getCartData().subscribe(data => {
-      this.cart = data
-    });
   }
 
   deliveryForm = new FormGroup({
@@ -33,8 +31,10 @@ export class DeliveryPageComponent {
     billingAddress: new FormControl('', [Validators.required, invalidAddress]),
     city: new FormControl('', [Validators.required, invalidAddress]),
     zipcode: new FormControl('', [Validators.required, invalidZipCode])
-  })
+  });
+
   submitForm(){
+    this.eventService.emit("deliveryInfo",this.deliveryInfo);
     this.router.navigate([''])
   }
 }

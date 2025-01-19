@@ -1,13 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { EventService } from '../../shared/services/EventService';
-import { Item } from '../../shared/models/item';
-
-interface value{
-  grade: string,
-  name: string,
-  price: number,
-  amount: number
-}
+import { value } from '../../shared/interfaces';
 
 @Component({
   selector: 'cart-item',

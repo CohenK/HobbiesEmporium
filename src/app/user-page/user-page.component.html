@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    @if (this.logged) {
+        <h1>Account Details</h1>
+        @if (this.loading) {
+            <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+                <h4 class="mt-3">Loading...</h4>
+            </div>
+        }@else {
+            @if (this.userInfo) {
+                <div class="row my-3">
+                    <h3 class="col-sm-2 col-md-2 col-lg-2">Email:</h3>
+                    <h3 class="col-sm-10 col-md-10 col-lg-10">{{this.userInfo.email}}</h3>
+                </div>
+                <h3>Orders:</h3>
+                @if (orders.length === 0) {
+                    <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+                        <h4 class="mt-3">There are no orders in your order history</h4>
+                    </div>
+                }@else {
+                    <div class="row my-2">
+                        <div class="col-sm-4 col-md-4 col-lg-4">Order ID</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">Date</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">Total</div>
+                    </div>
+                    @for (order of this.orders; track $index) {
+                        <a>
+                            <div class="row my-1">
+                                <div class="col-sm-4 col-md-4 col-lg-4">{{order.id}}</div>
+                                <div class="col-sm-4 col-md-4 col-lg-4">{{order.date | date:'dd/MM/yyy'}}</div>
+                                <div class="col-sm-4 col-md-4 col-lg-4">{{order.total | currency}}</div>
+                            </div>
+                        </a>
+                    }
+                }
+            }@else {
+                <h1>There was an error fetching user information.</h1>
+            }
+        }    
+    }@else {
+        <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+            <h4 class="mt-3">Please login to see account info.</h4>
+        </div>
+    }
+    
+</div>

@@ -1,15 +1,7 @@
 filter{
     position: sticky;
-    top: 20%;
 }
 
 .content{
     min-height: 80vh;
 }
-
-/* .search-sort{
-    position: sticky;
-    top: 12%;
-    z-index: 500;
-    background-color: white;
-} */

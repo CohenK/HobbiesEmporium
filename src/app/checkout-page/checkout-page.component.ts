@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { Cart } from '../../shared/models/cart';
-import { CartService } from '../cart.service';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Billing } from '../../shared/models/billing';
 import { invalidCardNumber, invalidCVC, invalidZipCode, invalidAddress, invalidExpirationYear } from '../validators';
 import { Router } from '@angular/router';
+import { EventService } from '../../shared/services/EventService';
 
 @Component({
   selector: 'checkout-page',
@@ -15,15 +14,8 @@ import { Router } from '@angular/router';
 })
 
 export class CheckoutPageComponent {
-  cart!: Cart;
   billingInfo: Billing =  new Billing();
-  constructor(private cartService: CartService, private router: Router){}
-
-  ngOnInit(): void {
-    this.cartService.getCartData().subscribe(data => {
-      this.cart = data
-    });
-  }
+  constructor(private router: Router, private eventService: EventService){}
 
   paymentForm = new FormGroup({
     firstName: new FormControl('', Validators.required),
@@ -38,6 +30,7 @@ export class CheckoutPageComponent {
     zipcode: new FormControl('', [Validators.required, invalidZipCode])
   })
   submitForm(){
-    this.router.navigate(['delivery'])
+    this.eventService.emit("checkoutInfo",this.billingInfo);
+    this.router.navigate(['delivery']);
   }
 }
