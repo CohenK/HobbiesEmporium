@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { doc, getDoc } from "firebase/firestore";
 import { db } from '../firebase';
 import { orderInfo, userInfo } from '../../shared/interfaces';
@@ -22,12 +22,16 @@ export class UserPageComponent implements OnInit{
   userInfo!: userInfo;
   orders: orderInfo[] = [];
 
-  constructor(private route: ActivatedRoute, private loggedService: LoggedService, private eventService: EventService, private authService: AuthService){}
+  constructor(private router: Router, private route: ActivatedRoute, private loggedService: LoggedService, private eventService: EventService, private authService: AuthService){}
 
   userLogout(){
     if(this.authService.logout()){
       this.eventService.emit("userLogout",{});
     };
+  }
+
+  toOrderDetails(orderID: string){
+    this.router.navigate(['user',this.userID,'order',orderID]);
   }
 
   async ngOnInit(){

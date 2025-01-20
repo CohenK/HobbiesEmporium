@@ -1,0 +1,79 @@
+<div class="container-fluid m-2">
+    @if (this.loading) {
+        <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+            <h4 class="mt-3">Loading...</h4>
+        </div>
+    }@else {
+        
+        <h1 style="font-weight: bold;">Order Details</h1>
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Order ID</div>
+            <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderID}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Order Date</div>
+            <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.orderDate | date:'dd/MM/yyy'}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Order Subtotal</div>
+            <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.subTotal | currency}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Order Tax</div>
+            <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.tax | currency}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Order Total</div>
+            <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.total | currency}}</div>
+        </div>
+        <div>
+            <h3 class="col-sm-2 col-md-2 col-lg-2 mt-3" style="font-weight: bold;">Order Items</h3>
+            @for (item of this.orderInfo.items; track $index) {
+                <div class="row px-3">
+                    <h4 class="col-sm-4 col-md-4 col-lg-4 p-0">({{item.grade}})-{{item.name}}</h4>
+                    <h4 class="col-sm-2 col-md-2 col-lg-2 p-0">{{item.price | currency}}</h4>
+                </div>
+            }
+        </div>
+        <div>
+            <h3 class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Billing Info</h3>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Name</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.checkoutInfo._fname}} {{this.orderInfo.checkoutInfo._lname}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Email</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.checkoutInfo._email}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Card</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.checkoutInfo._card | maskCreditCard}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Address</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.checkoutInfo._address}} {{this.orderInfo.checkoutInfo._city}} {{this.orderInfo.deliveryInfo._zipcode}}</div>
+            </div>
+        </div>
+        <div>
+            <h3 class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Delivery Info</h3>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Name</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.deliveryInfo._fname}} {{this.orderInfo.deliveryInfo._lname}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Email</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.deliveryInfo._email}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Phone</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.deliveryInfo._phone}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2" style="font-weight: bold;">Address</div>
+                <div class="col-sm-2 col-md-2 col-lg-2">{{this.orderInfo.deliveryInfo._address}} {{this.orderInfo.deliveryInfo._city}} {{this.orderInfo.deliveryInfo._zipcode}}</div>
+            </div>
+        </div>
+    }
+</div>
+
+

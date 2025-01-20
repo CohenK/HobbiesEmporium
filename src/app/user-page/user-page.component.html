@@ -27,8 +27,8 @@
                         <div class="col-sm-4 col-md-4 col-lg-4">Total</div>
                     </div>
                     @for (order of this.orders; track $index) {
-                        <a>
-                            <div class="row my-1">
+                        <a href="#" style="text-decoration: none;" (click)="$event.preventDefault(); toOrderDetails(order.id);">
+                            <div class="row my-1 p-2">
                                 <div class="col-sm-4 col-md-4 col-lg-4">{{order.id}}</div>
                                 <div class="col-sm-4 col-md-4 col-lg-4">{{order.date | date:'dd/MM/yyy'}}</div>
                                 <div class="col-sm-4 col-md-4 col-lg-4">{{order.total | currency}}</div>

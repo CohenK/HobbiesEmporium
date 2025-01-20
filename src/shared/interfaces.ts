@@ -1,3 +1,5 @@
+import { Billing } from "./models/billing"
+import { Delivery } from "./models/delivery"
 import { Item } from "./models/item"
 
 export interface cartItem{
@@ -26,5 +28,17 @@ export interface orderItem{
 export interface orderInfo{
     id: string,
     date: Date,
+    total: number
+}
+
+export interface firestoreOrder{
+    account: string,
+    amount: number,
+    checkoutInfo: any,
+    deliveryInfo: any,
+    items: any[],
+    orderDate: Date,
+    subTotal: number,
+    tax: number,
     total: number
 }

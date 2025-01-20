@@ -55,6 +55,7 @@ export class AppComponent implements OnInit{
   constructor(eventService: EventService, private router: Router, private loggedService: LoggedService, private sessionService: SessionService){
     eventService.listen("addToCart",(data: cartItem)=>{
       this.cart.addItem(data);
+      alert("item added to cart")
       this.sessionService.setObjectWithMap('userCartInfo', this.cart);
       if(this.loggedIn) this.updateFirestoreUserCart();
     });
@@ -74,12 +75,10 @@ export class AppComponent implements OnInit{
       if(this.loggedIn) this.updateFirestoreUserCart();
     });
     eventService.listen("checkoutInfo",(data: Billing)=>{
-      console.log(`received check out info: ${data}`)
       this.userCheckoutInfo = data;
       this.sessionService.setData('userCheckoutInfo', data);
     });
     eventService.listen("deliveryInfo", async (data: Delivery)=>{
-      console.log(`received delivery info: ${data}`)
       this.userDeliveryInfo = data;
       this.sessionService.setData('userDeliveryInfo', data);
       try{
@@ -147,24 +146,22 @@ export class AppComponent implements OnInit{
   }
   // on app load check for any localstorage data to repopulate variables: userID, checkout and delivery info
   ngOnInit(): void {
+    alert("This is a demo website, please do not provide any real personal information.")
     const sessionUserID = this.sessionService.getData('userID');
     const sessionCart = this.sessionService.getObjectWithMap('userCartInfo');
     const sessionCheckout = this.sessionService.getData('userCheckoutInfo');
     const sessionDelivery = this.sessionService.getData('userDeliveryInfo');
     if(sessionUserID){
-      console.log(`user ID found: ${sessionUserID}`);
       this.sessionLogin(sessionUserID);
     }
     if(sessionCart){
-      console.log(`user cart found`);
       this.cart = new Cart(sessionCart.cartItems, sessionCart.amount, sessionCart.subTotal);
     }
     if(sessionCheckout){
-      console.log(`user checkout found: ${sessionCheckout}`);
+  
       this.userCheckoutInfo = sessionCheckout;
     }
     if(sessionDelivery){
-      console.log(`user delivery found: ${sessionDelivery}`);
       this.userDeliveryInfo = sessionDelivery;
     }
   }

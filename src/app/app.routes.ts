@@ -6,6 +6,7 @@ import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { DeliveryPageComponent } from './delivery-page/delivery-page.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 
 export const routes: Routes = [
@@ -14,6 +15,7 @@ export const routes: Routes = [
     {path:'login', component: LoginPageComponent},
     {path:'checkout', component: CheckoutPageComponent},
     {path:'delivery', component: DeliveryPageComponent},
+    {path:'user/:userID/order/:orderID',component: OrderDetailsComponent},
     {path:'user/:userID', component: UserPageComponent},
     {path: '**', component: NotFoundComponent}
 ];

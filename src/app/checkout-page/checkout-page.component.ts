@@ -30,6 +30,11 @@ export class CheckoutPageComponent {
     zipcode: new FormControl('', [Validators.required, invalidZipCode])
   })
   submitForm(){
+    const now = new Date();
+    if((Number(this.billingInfo.expirationMonth) <= now.getMonth() && Number(this.billingInfo.expirationYear) <= now.getFullYear()) || Number(this.billingInfo.expirationYear) < now.getFullYear()){
+      alert("Invalid expiration info");
+      return;
+    }
     this.eventService.emit("checkoutInfo",this.billingInfo);
     this.router.navigate(['delivery']);
   }

@@ -31,7 +31,6 @@ export class LoginPageComponent {
   });
 
   login(){
-    console.log('logging in')
     this.auth.login(this.loginEmail,this.loginPassword).then((id:string)=>{
       this.eventService.emit('userLogin',id);
     });
