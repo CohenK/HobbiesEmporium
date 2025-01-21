@@ -3,14 +3,14 @@ import { cartItem, value } from "../interfaces";
 export class Cart{
     constructor(private cartItems: Map<string, value> = new  Map<string, value>, private amount: number = 0, private subTotal: number = 0){}
 
-    addItem(data: cartItem): void{
+    addItem(data: cartItem): boolean{
       let key = JSON.stringify(data.item);
       let model = data.item;
 
       if(this.cartItems.has(key)){
         let currentAmt: number = this.cartItems.get(key)?.amount as number;
         if(currentAmt === 3){
-          
+          return false;
         }else{
           let amt = Math.min(3,currentAmt+data.amount)
           this.cartItems.set(key,{grade: model.grade, name: model.name, price: model.price, amount: amt});
@@ -23,6 +23,7 @@ export class Cart{
         this.amount = this.amount + data.amount;
         this.subTotal += model.price * data.amount;
       }
+      return true;
     }
 
     removeItem(data: string): boolean{

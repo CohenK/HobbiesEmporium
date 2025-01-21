@@ -2,12 +2,12 @@
     <select class="form-select"
         [(ngModel)]="listSorter"
         (ngModelChange)="sorterChanged($event)">
-        <option value=0>-</option>
-        <option value=1>price &uarr;</option>
-        <option value=2>price &darr;</option>
-        <option value=3>alphabetical &uarr;</option>
-        <option value=4>alphabetical &darr;</option>
-        <option value=5>release &uarr;</option>
-        <option value=6>release &darr;</option>
+        <option value=0>Sort By</option>
+        <option value=1>price &uarr; (asc)</option>
+        <option value=2>price &darr; (desc)</option>
+        <option value=3>alphabetical &uarr; (a-z)</option>
+        <option value=4>alphabetical &darr; (z-a)</option>
+        <option value=5>release &uarr; (asc)</option>
+        <option value=6>release &darr; (desc)</option>
     </select>
 </div>

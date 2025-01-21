@@ -1,5 +1,3 @@
-import { Billing } from "./models/billing"
-import { Delivery } from "./models/delivery"
 import { Item } from "./models/item"
 
 export interface cartItem{

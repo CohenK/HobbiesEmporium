@@ -12,6 +12,7 @@ import { db } from './firebase';
 import { doc, updateDoc, addDoc, collection, getDoc } from "firebase/firestore";
 import { LoggedService } from '../shared/services/LoggedService';
 import { SessionService } from '../shared/services/SessionService';
+import { Item } from '../shared/models/item';
 
 @Component({
   selector: 'app-root',
@@ -46,16 +47,28 @@ export class AppComponent implements OnInit{
       }
       return v;
     });
-    const totalAmount = this.cart.getAmt() + userCartData.amount;
-    const totalSubTotal = this.cart.getSubTotal() + userCartData.subTotal;
-    const allItems = new Map<string,value>([...this.cart.getItems(),...userCartData.cartItems]);
-    return new Cart(allItems, totalAmount, totalSubTotal);
+    const cart = new Cart();
+    this.cart.getItems().forEach((value,item)=>{
+      cart.addItem({item: JSON.parse(item) as Item, amount: value.amount});
+    })
+    const userCartDataItems = userCartData.cartItems as Map<string,value>;
+    userCartDataItems.forEach((value,item)=>{
+      cart.addItem({item: JSON.parse(item) as Item, amount: value.amount});
+    })
+    // const totalAmount = this.cart.getAmt() + userCartData.amount;
+    // const totalSubTotal = this.cart.getSubTotal() + userCartData.subTotal;
+    // const allItems = new Map<string,value>([...this.cart.getItems(),...userCartData.cartItems]);
+    // return new Cart(allItems, totalAmount, totalSubTotal);
+    return cart;
   }
 
   constructor(eventService: EventService, private router: Router, private loggedService: LoggedService, private sessionService: SessionService){
     eventService.listen("addToCart",(data: cartItem)=>{
-      this.cart.addItem(data);
-      alert("item added to cart")
+      if(this.cart.addItem(data)){
+        alert("Items have been added to your cart.")  
+      }else{
+        alert("No more of this item can be purchased.")
+      }
       this.sessionService.setObjectWithMap('userCartInfo', this.cart);
       if(this.loggedIn) this.updateFirestoreUserCart();
     });
@@ -121,7 +134,9 @@ export class AppComponent implements OnInit{
     this.loggedIn = false;
     this.loggedService.setLoggedState(false);
     this.sessionService.removeData('userID');
+    this.sessionService.removeData('userCartInfo');
     this.cart = new Cart();
+    this.router.navigate(['']);
   });
 
   eventService.listen("userLogin",(data: string)=>{
