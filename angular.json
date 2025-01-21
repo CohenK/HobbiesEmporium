@@ -15,7 +15,7 @@
           "options": {
             "outputPath": "dist/hobbies-emporium",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "browser": "",
             "polyfills": [
               "zone.js"
             ],
@@ -39,7 +39,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1.5MB",
+                  "maximumWarning": "2MB",
                   "maximumError": "2MB"
                 },
                 {
