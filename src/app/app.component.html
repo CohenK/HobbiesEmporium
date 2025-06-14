@@ -2,6 +2,12 @@
   <cart-modal [cart]="this.cart" [logged]="this.loggedIn"></cart-modal>
   <!-- <login-modal (userID)="userLogin($event)"></login-modal> -->
   <thankyou-modal></thankyou-modal>
-  <navbar class="sticky-top" [items]="this.cart.getAmt()" [logged]="this.loggedIn" [userID]="this.userID"></navbar>
+  <navbar
+    class="sticky-top"
+    [items]="this.cart.getAmt()"
+    [logged]="this.loggedIn"
+    [userID]="this.userID"
+  ></navbar>
   <router-outlet></router-outlet>
+  <footer></footer>
 </div>

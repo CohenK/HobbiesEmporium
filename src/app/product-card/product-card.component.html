@@ -1,20 +1,27 @@
 <div class="card">
   <div class="image-container">
-    <img class="card-img-top" src={{item.thumbnail}} alt="Card image cap" class="img-fluid">
+    <img
+      class="card-img-top"
+      src="{{ item.thumbnail }}"
+      alt="Card image cap"
+      class="img-fluid"
+    />
   </div>
-  
+
   <div class="card-body d-flex align-items-center">
-    <div class="card-title m-0">{{item.name}}</div>
+    <div class="card-title m-0">{{ item.name }}</div>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Grade: {{item.grade}}</li>
-    <li class="list-group-item">Size: {{item.size}}</li>
+    <li class="list-group-item">Grade: {{ item.grade }}</li>
+    <li class="list-group-item">Size: {{ item.size }}</li>
     @if (item.pbandai) {
-      <li class="list-group-item">P-Bandai Exclusive: Yes</li>
+    <li class="list-group-item">P-Bandai Exclusive: Yes</li>
     }@else {
-      <li class="list-group-item">P-Bandai Exclusive: No</li>
+    <li class="list-group-item">P-Bandai Exclusive: No</li>
     }
-    <li class="list-group-item">Relase Date: {{item.release}}</li>
-    <li class="list-group-item">Price: {{item.price}}</li>
+    <li class="list-group-item">
+      Relase Date: {{ item.release | date : "yyyy-mm-dd" }}
+    </li>
+    <li class="list-group-item">Price: {{ item.price }}</li>
   </ul>
 </div>

@@ -1,0 +1,19 @@
+.container {
+  padding: 0 3rem;
+  min-height: 65vh;
+}
+
+h5 {
+  font-style: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  text-decoration: bold;
+}
+
+.title {
+  text-decoration: underline;
+}

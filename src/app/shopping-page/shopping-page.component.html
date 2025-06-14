@@ -1,32 +1,68 @@
 <div class="container-fluid m-0">
-    @if (this.loading) {
-        <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
-            <h4 class="mt-3">Loading...</h4>
+  @if (this.loading) {
+  <div
+    class="d-flex justify-content-center align-items-center"
+    style="height: 20vh"
+  >
+    <h4 class="mt-3">Loading...</h4>
+  </div>
+  }@else {
+  <div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-2"></div>
+    <div class="col-sm-9 col-md-9 col-lg-10 mt-4">
+      <div class="row search-sort d-flex">
+        <div class="col-sm-9 col-md-9 col-lg-9 mt-0">
+          <search-bar></search-bar>
         </div>
-    }@else {
-        <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-2"></div>
-            <div class="col-sm-9 col-md-9 col-lg-10 mt-4">
-                <div class="row search-sort d-flex">
-                    <div class="col-sm-9 col-md-9 col-lg-9 mt-0">
-                        <search-bar></search-bar>
-                    </div>
-                    <div class="col-sm-3 col-md-3 col-lg-3 mt-0">
-                        <sorter></sorter>
-                    </div>
-                </div>
-            </div> 
+        <div class="col-sm-3 col-md-3 col-lg-3 mt-0">
+          <sorter></sorter>
         </div>
-        
-        <div class="row content">
-            <div class="col-sm-3 col-md-3 col-lg-2">
-                <filter></filter>
-            </div>
-            <div class="col-sm-9 col-md-9 col-lg-10 mt-0"> 
-                <product-list
-                    [displayProducts]="displayedItems">
-                </product-list>
-            </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="row content">
+    <div class="col-sm-3 col-md-3 col-lg-2">
+      <filter></filter>
+    </div>
+    <div class="col-sm-9 col-md-9 col-lg-10 mt-0">
+      @if(this.searching){
+      <div class="d-flex">
+        <h5 class="me-2">Searching:</h5>
+        <div class="searchBubble">
+          {{ this.searchTerm }}
+          <button
+            type="button"
+            class="btn-close"
+            aria-label="Close"
+            (click)="resetSearch()"
+          ></button>
         </div>
-    }
+      </div>
+      }
+      <product-list [displayProducts]="pagedItems"> </product-list>
+    </div>
+  </div>
+
+  <ul class="pagination">
+    <li class="page-item">
+      <button
+        class="btn btn-primary"
+        aria-label="Previous"
+        (click)="prevPage()"
+      >
+        <span aria-hidden="true">prev</span>
+      </button>
+    </li>
+    <li class="page-item">
+      <span class="page-link">Page {{ this.page }}</span>
+    </li>
+    <li class="page-item">
+      <button class="btn btn-primary" aria-label="Next" (click)="nextPage()">
+        <span aria-hidden="true">next</span>
+      </button>
+    </li>
+  </ul>
+
+  }
 </div>

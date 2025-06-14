@@ -1,0 +1,24 @@
+.container {
+  padding: 0 3rem;
+  min-height: 65vh;
+}
+h3 {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+p {
+  font-size: 1rem;
+  text-decoration: bold;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+a {
+  color: #2c52b3;
+  text-decoration: none;
+}
+a:hover {
+  color: #fb2f38;
+}

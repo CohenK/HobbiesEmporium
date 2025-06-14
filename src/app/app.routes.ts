@@ -7,15 +7,23 @@ import { DeliveryPageComponent } from './delivery-page/delivery-page.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
-
+import { AboutPageComponent } from './about/about-page.component';
+import { PaymentShippingPageComponent } from './payment-shipping/payment-shipping-page.component';
+import { TermsPageComponent } from './terms/terms-page.component';
+import { PrivacyPageComponent } from './privacy/privacy-page.component';
 
 export const routes: Routes = [
-    {path:'', component: ShoppingPageComponent},
-    {path:'details/:productID', component: DetailsPageComponent},
-    {path:'login', component: LoginPageComponent},
-    {path:'checkout', component: CheckoutPageComponent},
-    {path:'delivery', component: DeliveryPageComponent},
-    {path:'user/:userID/order/:orderID',component: OrderDetailsComponent},
-    {path:'user/:userID', component: UserPageComponent},
-    {path: '**', component: NotFoundComponent}
+  { path: '', component: ShoppingPageComponent },
+  { path: 'about', component: AboutPageComponent },
+  { path: 'paymentShipping', component: PaymentShippingPageComponent },
+  { path: 'terms', component: TermsPageComponent },
+  { path: 'privacy', component: PrivacyPageComponent },
+  { path: 'search', component: ShoppingPageComponent },
+  { path: 'details/:productID', component: DetailsPageComponent },
+  { path: 'login', component: LoginPageComponent },
+  { path: 'checkout', component: CheckoutPageComponent },
+  { path: 'delivery', component: DeliveryPageComponent },
+  { path: 'user/:userID/order/:orderID', component: OrderDetailsComponent },
+  { path: 'user/:userID', component: UserPageComponent },
+  { path: '**', component: NotFoundComponent },
 ];

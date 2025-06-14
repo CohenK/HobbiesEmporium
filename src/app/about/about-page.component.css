@@ -1,0 +1,20 @@
+.container {
+  padding: 0 3rem;
+  min-height: 65vh;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #2c52b3;
+  text-decoration: none;
+}
+a:hover {
+  color: #fb2f38;
+}

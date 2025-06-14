@@ -1,49 +1,56 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Item } from '../../shared/models/item';
 import { ModelCarouselComponent } from '../model-carousel/model-carousel.component';
 import { DetailInfoComponent } from '../detail-info/detail-info.component';
 import { AddToCartComponent } from '../add-to-cart/add-to-cart.component';
 import { EventService } from '../../shared/services/EventService';
 import { ActivatedRoute } from '@angular/router';
-import { doc, getDoc } from "firebase/firestore";
-import { db } from '../firebase';
+import { BackendService } from '../../shared/services/backendService';
 
 @Component({
   selector: 'details-page',
   standalone: true,
-  imports: [ModelCarouselComponent,DetailInfoComponent,AddToCartComponent],
+  imports: [ModelCarouselComponent, DetailInfoComponent, AddToCartComponent],
   templateUrl: './details-page.component.html',
-  styleUrl: './details-page.component.css'
+  styleUrl: './details-page.component.css',
 })
-export class DetailsPageComponent implements OnInit{
+export class DetailsPageComponent implements OnInit {
   loading: boolean = true;
   productId!: string;
   item!: Item;
-  constructor(private eventService: EventService, private route: ActivatedRoute){}
+  constructor(
+    private eventService: EventService,
+    private route: ActivatedRoute,
+    private backendService: BackendService
+  ) {}
 
-  addToCart(amount: any){
-    this.eventService.emit("addToCart",{item: this.item, amount: amount})
+  addToCart(amount: any) {
+    this.eventService.emit('addToCart', { item: this.item, amount: amount });
   }
 
-  async ngOnInit(){
-    this.route.paramMap.subscribe(params => {
+  async ngOnInit() {
+    this.route.paramMap.subscribe((params) => {
       this.productId = params.get('productID') as string;
     });
-
-    try{  
-      const docRef = doc(db, "products", this.productId);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()){
-        this.item = docSnap.data() as Item;
-      }else{
-        console.error("Item does not exist.");
-      }
-    }catch(error) {
-      console.error('Error fetching document:', error);
-    } finally {
+    if (this.productId) {
+      this.loading = true;
+      this.backendService.getProduct(parseInt(this.productId)).subscribe({
+        next: (item) => {
+          if (item) {
+            this.item = item;
+          } else {
+            console.error('Item does not exist.');
+          }
+          this.loading = false;
+        },
+        error: (err) => {
+          console.error('Error fetching product:', err);
+          this.loading = false;
+        },
+      });
+    } else {
+      console.error('ProductID not found');
       this.loading = false;
-    };
-    
-  };
-
-} 
+    }
+  }
+}
