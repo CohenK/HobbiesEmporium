@@ -19,9 +19,14 @@ export const neondb = onRequest(
     const origin = request.get('origin');
 
     if (origin) {
-      console.log('Request origin:', origin); // for debugging in logs
-      // Allow any localhost origin (with any port)
+      console.log('Request origin:', origin);
+      // Allow localhost (any port) during development
       if (origin.startsWith('http://localhost')) {
+        response.set('Access-Control-Allow-Origin', origin);
+      }
+
+      // Allow GitHub Pages for deployment
+      if (origin === 'https://cohenk.github.io') {
         response.set('Access-Control-Allow-Origin', origin);
       }
     }
